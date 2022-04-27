@@ -40,5 +40,6 @@ const FeaturedList=(props)=>{
             </div>
         </section>
     );
-}
+   / *comment added*/
+}  
 export default FeaturedList;
