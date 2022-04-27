@@ -1,0 +1,36 @@
+.form-data{
+    margin: 30px 0;
+    background-color: aliceblue;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.formcollect{
+    width: 20%;
+}
+.formcollect label{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.formcollect input{
+    width: 100%;
+    outline: none;
+    padding: 5px 5px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.formcollect-anc{
+    margin-top: 40px;
+}
+.formcollect-anc a{
+    background-color: blue;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 20px;
+}
+.formcollect-anc a:hover{
+    background-color: black;
+    color: white;
+}
