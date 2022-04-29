@@ -1,0 +1,40 @@
+.kunnen-sec{
+    text-align: center;
+}
+.kunnen-sec h4{
+    color: #231F20;
+    font-size: 60px;
+    font-family: "giloryBold";
+}
+.kunnen-sec p{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    max-width: 658px;
+    margin: 0 auto;
+}
+@media screen and (max-width:1024px){
+    .kunnen-sec h4{
+        font-size: 48px;
+    }
+    .kunnen-sec p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .kunnen-sec h4{
+        font-size: 36px;
+    }
+    .kunnen-sec p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:576px){
+    .kunnen-sec h4{
+        font-size: 24px;
+    }
+    .kunnen-sec p{
+        font-size: 15px;
+        padding: 0 5px;
+    }
+}

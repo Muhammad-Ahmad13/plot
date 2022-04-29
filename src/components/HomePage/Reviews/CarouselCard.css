@@ -1,0 +1,41 @@
+.carous-card-main{
+    background-color: #EEF2FC;
+    border-radius: 13px;
+    padding: 30px 30px 15px 30px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.carous-card-main p{
+    color: #353535;
+    font-size: 20px;
+    font-family: "giloryMedium";
+}
+.carous-content{
+    display: flex;
+    margin-top: auto;
+}
+.carous-content .carous-image{
+    width: 50px;
+    height: 50px;
+    background-color: #353535;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.carous-content .carous-des h3{
+    color: #353535;
+    font-size: 20px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.carous-content .carous-anc a{
+    color: #1E87F0;
+    font-size: 16px;
+    font-family: "giloryMedium";
+}
+@media screen and (max-width:576px){
+    .carous-card-main{
+        padding: 20px 8px 15px 15px;
+    }
+    
+}

@@ -1,0 +1,113 @@
+.contact-main{
+    background-image:url("../../../assets/images/form-bg.png");
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.contact-sec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-content1{
+    width: 45%;
+}
+.contact-content2{
+    width: 45%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin-bottom: -150px;
+    box-shadow: 0 0 10px #979797;
+}
+.contact-content1 h4{
+    color: #fff;
+    font-size: 60px;
+    font-family: "giloryBold";
+}
+.contact-content1 p{
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryMedium";
+}
+.contact-anc{
+    text-align: center;
+}
+.contact-anc button{
+    background-color: #1E87F0;
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    border-radius: 10px;
+    padding: 15px 35px;
+    border: none;
+}
+.contact-content2 h4{
+    color: #000;
+    font-size: 40px;
+    font-family: "giloryBold";
+}
+.contact-content2 .contact-input input{
+    width: 100%;
+    background-color: #EEF2FC;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 14px 7px;
+    margin-bottom: 25px;
+}
+.contact-content2 .contact-input input::placeholder{
+   color: #353535;
+   font-family: "giloryMedium";
+   font-size: 22px;
+}
+.contact-content2 .contact-textarea textarea{
+    width: 100%;
+    background-color: #EEF2FC;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 14px 7px;
+    margin-bottom: 25px;
+}
+.contact-content2 .contact-textarea textarea::placeholder{
+    color: #353535;
+    font-family: "giloryMedium";
+    font-size: 22px;
+ }
+ @media screen and (max-width:1024px){
+    .contact-content1 h4{
+        font-size: 48px;
+    }
+    .contact-content1 p{
+        font-size: 18px;
+    }
+    .contact-anc button{
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
+@media screen and (max-width:768px){
+    .contact-content1 h4{
+        font-size: 36px;
+    }
+    .contact-sec{
+       flex-direction: column;
+    }
+    .contact-content1,.contact-content2{
+        width: 100%;
+    }
+    .contact-content2 h4{
+        font-size: 28px;
+    }
+}
+@media  screen and (max-width:576px){
+    .contact-main{
+        padding: 50px 0;
+    }
+    .contact-content1 h4{
+        font-size: 24px;
+    }
+    .contact-content1 p{
+        font-size: 16px;
+    }
+}
