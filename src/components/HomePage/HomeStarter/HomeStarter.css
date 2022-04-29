@@ -1,0 +1,33 @@
+.starter-main{
+    background-color: #1E87F0;
+    padding: 50px 0;
+}
+.starter-content p{
+    color: #fff;
+    font-size: 45px;
+    font-family: 'giloryBold';
+}
+@media screen and (max-width:1024px){
+    .starter-main{
+        padding: 35px 0 30px 0;
+    }
+    .starter-content p{
+        font-size: 36px;
+    } 
+}
+@media screen and (max-width:768px){
+    .starter-main{
+        padding: 25px 0 20px 0;
+    }
+    .starter-content p{
+        font-size: 28px;
+    } 
+}
+@media screen and (max-width:576px){
+    .starter-main{
+        padding: 20px 0 15px 0;
+    }
+    .starter-content p{
+        font-size: 18px;
+    } 
+}

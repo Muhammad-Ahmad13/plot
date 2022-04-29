@@ -1,0 +1,23 @@
+.manager-main{
+    text-align: center;
+}
+.manager-image img{
+    max-width: 172px;
+}
+.manager-main p{
+    color: #353535;
+    font-size: 20px;
+    font-family: "giloryMedium";
+    padding: 10px 0;
+}
+@media screen and (max-width:1024px){
+    .manager-main p{
+        font-size: 18px;
+        padding: 8px 0;
+    }
+}
+@media screen and (max-width:768px){
+    .manager-main p{
+        font-size: 16px;
+    }
+}

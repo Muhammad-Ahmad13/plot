@@ -1,0 +1,65 @@
+.content-sec span{
+    color: #1E87F0;
+    font-size: 20px;
+    font-family: "giloryBold";
+}
+.content-sec h5{
+    color: #231F20;
+    font-size: 60px;
+    font-family: "giloryBold";
+}
+.content-sec p{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    max-width: 500px;
+    padding: 10px 0 15px 0;
+}
+.content-sec .content-anc{
+    margin-top: 20px;
+}
+.content-sec .content-anc a{
+    background-color: #1E87F0;
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    border-radius: 10px;
+    padding: 20px 38px;
+}
+@media screen and (max-width:1024px){
+    .content-sec h5{
+        font-size: 48px;
+    }
+    .content-sec p{
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+    .content-sec .content-anc a{
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
+@media screen and (max-width:768px){
+    .content-sec h5{
+        font-size: 36px;
+    }
+    .content-sec p{
+        font-size: 18px;
+        padding: 8px 0 10px 0;
+    }
+    .content-sec .content-anc a{
+        font-size: 16px;
+        padding: 15px 25px;
+    } 
+}
+@media screen and (max-width:576px){
+    .content-sec h5{
+        font-size: 32px;
+    }
+    .content-sec p{
+        font-size: 16px;
+    }
+    .content-sec .content-anc a{
+        font-size: 16px;
+    }
+}

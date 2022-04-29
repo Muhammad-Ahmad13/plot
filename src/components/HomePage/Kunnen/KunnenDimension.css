@@ -1,0 +1,22 @@
+.dimen-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 15px 10px 10px;
+}
+.dimen-image{
+    width: 64px;
+    height: 64px;
+    margin-right: 15px;
+}
+.dimen-content h4{
+    color: #353535;
+    font-size: 20px;
+    font-family: "giloryBold";
+}
+.dimen-content p{
+    color: #353535;
+    font-size: 18px;
+    font-family: "giloryMedium";
+}

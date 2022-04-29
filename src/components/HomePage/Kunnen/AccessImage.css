@@ -1,0 +1,5 @@
+.accessimage-img img{
+    border-radius: 500px 500px 0px 0px;
+    max-width: 490px;
+    box-shadow: 0 0 20px grey;
+}

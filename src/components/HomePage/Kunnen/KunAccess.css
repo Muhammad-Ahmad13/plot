@@ -1,0 +1,38 @@
+.access-mian{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0 0px 0;
+}
+.access-content{
+    width: 50%;
+}
+.access-content2{
+    width: 48%;
+    position: relative;
+}
+.access-abs2{
+    position: absolute;
+    bottom: 70px;
+    left: -60px;
+}
+.access-abs1{
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+@media screen and (max-width:1024px){
+    .access-abs1{
+        top: 50px;
+        right: 0px;
+    } 
+}
+@media screen and (max-width:576px){
+    .access-main{
+        flex-direction: column;
+     } 
+     .access-content, .access-content2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

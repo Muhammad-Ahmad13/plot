@@ -1,0 +1,25 @@
+.receive-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0 0 0;
+}
+.receive-content1{
+    width: 50%;
+}
+.receive-content2{
+    width: 50%;
+}
+.receive-content2 p{
+    max-width: 620px;
+}
+@media screen and (max-width:576px){
+    .receive-main{
+       flex-direction: column;
+    }  
+    .receive-content1, .receive-content2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
