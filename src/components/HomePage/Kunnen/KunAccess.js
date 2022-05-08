@@ -5,6 +5,7 @@ import "./KunAccess.css";
 import KunnenDimension from "./KunnenDimension";
 import dimen1 from "../../../assets/images/dimen1.png";
 import dimen2 from "../../../assets/images/dimen2.png";
+import PlotCondition from "./PlotCondition";
 const KunAccess = () =>{
     return(
         <div className="access-mian">
@@ -33,6 +34,17 @@ const KunAccess = () =>{
                 dimenImage={dimen2}
                 dimenHead="245 m"
                 dimenPara="Tuinoppervlakte"
+                />
+            </div>
+            <div className="access-abs3">
+                <PlotCondition 
+                conditionImage = ""
+                conditionHeading = ""
+                conditionPara = ""
+                conditionprice1 = "€ 277.000"
+                conditionprice2 = "€ 2.972 m"
+                bottomHeading = "Plotcores Woningwaarde"
+                bottomPara = "Goede conditie"
                 />
             </div>
             </div>

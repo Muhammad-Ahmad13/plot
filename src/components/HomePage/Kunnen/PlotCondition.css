@@ -1,0 +1,53 @@
+.condition-main{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #979797;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.condition-sec{
+    display: flex;
+}
+.condition-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: gray;
+    margin-right: 15px;
+}
+.condition-content h3{
+    background-color: #979797;
+    height: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+.condition-content p{
+    background-color: #979797;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+.condition-content span{
+    color: #1E87F0;
+    font-size: 16px;
+    font-family: "giloryMedium";
+    margin-right: 5px;
+}
+.condition-bottom-content h5{
+    font-size: 22px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.condition-bottom-content p{
+    font-size: 20px;
+    font-family: "giloryMedium";
+    padding: 5px 0;
+    margin: 0;
+}
+@media screen and (max-width:768px) {
+    .condition-bottom-content h5{
+        font-size: 18px;
+    }
+    .condition-bottom-content p{
+        font-size: 18px;
+    }
+}

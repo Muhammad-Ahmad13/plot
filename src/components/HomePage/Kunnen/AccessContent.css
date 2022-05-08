@@ -28,7 +28,7 @@
 }
 @media screen and (max-width:1024px){
     .content-sec h5{
-        font-size: 48px;
+        font-size: 40px;
     }
     .content-sec p{
         font-size: 20px;
@@ -41,7 +41,7 @@
 }
 @media screen and (max-width:768px){
     .content-sec h5{
-        font-size: 36px;
+        font-size: 30px;
     }
     .content-sec p{
         font-size: 18px;
