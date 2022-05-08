@@ -1,0 +1,35 @@
+.best-main{
+    padding: 15px 15px;
+    background-color: #FFFFFF;
+    border-radius:5px;
+}
+.best-content{
+    display: flex;
+}
+.best-image img {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+.best-content h4{
+    font-size: 20px;
+    color: #231F20;
+    padding: 8px 0;
+    margin: 0;
+    font-family: "giloryBold";
+}
+.best-main p{
+    font-size: 16px;
+    color: #231F20;
+    padding: 8px 0;
+    margin: 0;
+    font-family: "giloryMedium";
+}
+@media screen and (max-width:1024px){
+    .best-main{
+        padding: 8px 9px;
+    }
+    .best-content h4{
+        font-size: 18px;
+    }
+}

@@ -1,6 +1,7 @@
 .contact-main{
     background-image:url("../../../assets/images/form-bg.png");
     background-repeat: no-repeat;
+    background-size: 100%;
     padding: 100px 0;
 }
 .contact-sec{

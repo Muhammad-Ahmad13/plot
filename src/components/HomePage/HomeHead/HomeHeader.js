@@ -24,18 +24,18 @@ const HomeHeader = () =>{
                     <li className="nav-item">
                         <a className="nav-link" href="#">Zelf berekenen</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hoe het werkt</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Hoe het werkt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Prijzen</a>
+                        <a className="nav-link" href="#">Prijzen</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">For Expats</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">For Expats</a>
                     </li>
                     <div className="home-list-btn">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gratis infomatiegesprek</a>
+                        <a className="nav-link" href="#">Gratis infomatiegesprek</a>
                     </li>
                     </div>
                     </ul>

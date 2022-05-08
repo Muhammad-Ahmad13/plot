@@ -10,7 +10,7 @@ import "./ReviewsCarousel.css";
 const options1 ={
     responsiveClass: true,
     nav: true,
-    navText: ["<img src='../../../assets/images/carous-3.png' alt='nav-image'/>","<img src='../../../assets/images/carous-3.png' alt='nav-image'/>"],
+    navText: ["<div class='nav-button owl-prev'><</div>","<div class='nav-button owl-next'>></div>"],
     dots: false,
     autoplay: true,
     loop:true,

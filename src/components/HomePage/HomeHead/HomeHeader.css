@@ -11,6 +11,9 @@
     position: relative;
     display: inline-block;
 }
+.home-data li a:hover {
+    color: #0087ca;
+}
 .home-data li a::after {
     content: '';
     position: absolute;

@@ -21,10 +21,19 @@
     top: 50px;
     right: 70px;
 }
+.access-abs3{
+    position: absolute;
+    bottom: -50px;
+    right: 70px;
+}
 @media screen and (max-width:1024px){
     .access-abs1{
         top: 50px;
         right: 0px;
+    }
+    .access-abs3{
+        bottom: -80px;
+        right: -20px;
     } 
 }
 @media screen and (max-width:576px){
@@ -35,4 +44,12 @@
         width: 100%;
         margin-bottom: 30px;
     }
+    .access-abs2{
+        bottom: 70px;
+        left: -10px;
+    }
+    .access-abs3{
+        bottom: -90px;
+        right: -10px;
+    } 
 }

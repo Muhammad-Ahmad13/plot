@@ -1,11 +1,12 @@
 import React from "react";
 import "./ReceiveSec.css";
 import AccessContent from "./AccessContent";
+import ValueSection from "./ValueSection";
 const ReceiveSec=()=>{
     return(
         <div className="receive-main">
             <div className="receive-content1">
-
+                <ValueSection/>
             </div>
             <div className="receive-content2">
                 <AccessContent
