@@ -1,0 +1,89 @@
+.starterform-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.starter-content1{
+    width: 60%;
+    background-color: #f8f9fa;
+    padding: 25px 15px;
+}
+.starter-content1 h4{
+    color: #000;
+    font-size: 32px;
+}
+.starter-content2{
+    width: 40%;
+}
+.starter-content2 .starter-image{
+    margin: 40px 0;
+}
+.starter-content2 .starter-image img{
+    max-width: 415px;
+    border-radius: 10px;
+}
+.starter-form{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.starter-form-input{
+    width: 45%;
+}
+.starter-form-input input, .starter-form-area textarea{
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    padding: 15px 8px;
+    box-shadow: 0 0 10px #d1d2d3;
+    border-radius: 3px;
+    outline: none;
+}
+.starter-form-input label, .starter-form-area label{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.starter-form-input input::placeholder, .starter-form-area textarea::placeholder{
+    color: grey;
+    font-size: 18px;
+}
+.starter-form-area{
+    width: 90%;
+    margin: 15px 0;
+}
+.starter-form-anc button{
+    background-color: blue;
+    width: 25%;
+    color: #fff;
+    padding: 20px 15px;
+    border: none;
+    border-radius:8px;
+    font-weight: bold;
+}
+@media screen and (max-width:768px){
+    .starter-form {
+        width: 100%;
+    }
+    .starter-form-area{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .starterform-main{
+        flex-direction: column-reverse;
+    }
+    .starter-content1{
+        width: 100%;
+    }
+    .starter-content2{
+        width: 100%;
+    }
+    .starter-form{
+        flex-direction: column;
+    }
+    .starter-form-input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
