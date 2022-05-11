@@ -32,11 +32,11 @@ const HomeHeader = () =>{
                         <Link className="nav-link" to ="#">Prijzen</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to ="#">For Expats</Link>
+                        <Link className="nav-link" to ="/starter">Starter</Link>
                     </li>
                     <div className="home-list-btn">
                     <li class="nav-item">
-                        <Link className="nav-link" to ="/starter">Gratis infomatiegesprek</Link>
+                        <Link className="nav-link" to ="#">Gratis infomatiegesprek</Link>
                     </li>
                     </div>
                     </ul>
