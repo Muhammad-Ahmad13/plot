@@ -1,0 +1,29 @@
+.starter-anc{
+    margin-right: 40px;
+}
+.starter-anc a{
+    color: #fff;
+    background-color: orange;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.starter-anc a:hover{
+    color: #fff;
+    background-color: black;
+}
+.starter-icon img{
+    width: 30px;
+    height: 25px;
+}
+@media screen and (max-width:576px){
+    .nav-content{
+        height: 40vh;
+        transition: 0.3s ease-in-out;
+    }
+    .starter-icon img{
+        margin:30px 0px 0 15px;
+    }
+    .starter-anc{
+        margin-top: 50px;
+    }
+}

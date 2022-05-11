@@ -2,12 +2,13 @@ import React from "react";
 import "./HomeHeader.css";
 import logo from "../../../assets/images/logo-image.png";
 import icon from "../../../assets/images/burger-icon-icon-removebg-preview.png";
+import { Link } from "react-router-dom";
 const HomeHeader = () =>{
     return(
     <header>
         <nav className="navbar navbar-expand-lg  home-main">
             <div className="container">
-            <a className="navbar-brand" href="/"><img src={logo} alt="logo_image"/></a>
+            <Link className="navbar-brand" to="/"><img src={logo} alt="logo_image"/></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon">
                     <img src={icon} alt="Buger-icon"/>
@@ -17,25 +18,25 @@ const HomeHeader = () =>{
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav home-data">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
+                        <Link className="nav-link" aria-current="page" to ="#">
                             Kopen met Plotcore
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Zelf berekenen</a>
+                        <Link className="nav-link" to ="#">Zelf berekenen</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Hoe het werkt</a>
+                        <Link className="nav-link" to ="#">Hoe het werkt</Link>
                     </li>
                     <li class="nav-item">
-                        <a className="nav-link" href="#">Prijzen</a>
+                        <Link className="nav-link" to ="#">Prijzen</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">For Expats</a>
+                        <Link className="nav-link" to ="#">For Expats</Link>
                     </li>
                     <div className="home-list-btn">
                     <li class="nav-item">
-                        <a className="nav-link" href="#">Gratis infomatiegesprek</a>
+                        <Link className="nav-link" to ="/starter">Gratis infomatiegesprek</Link>
                     </li>
                     </div>
                     </ul>
