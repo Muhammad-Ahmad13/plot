@@ -1,6 +1,7 @@
 import React from "react";
 import "../HomeWrapper/HomeWrapper.css";
 import headImage from "../../../assets/images/modern-image.png";
+import { Link } from "react-router-dom";
 const HomeWrapper = () =>{
     return(
         <div className="modern-main">
@@ -14,7 +15,7 @@ const HomeWrapper = () =>{
                             Laat technologie jou helpen bij het zoeken naar een woning.
                         </p>
                         <div className="modern-anc">
-                            <a href="#">Direct starten</a>
+                            <Link to ="#">Direct starten</Link>
                         </div>
                     </div>
                     <div className="modern-content2">

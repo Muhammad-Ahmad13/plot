@@ -22,11 +22,13 @@
 .hfoot-content3{
     width: 35%;
 }
-.hfoot-main ul li, p{
+.hfoot-main ul li a, p{
     font-size: 18px;
     color: #353535;
-    margin-bottom: 10px;
     font-family: "giloryMedium";
+}
+.hfoot-main ul li, p{
+    margin-bottom: 10px;
 }
 .hfoot-main h5{
     font-size: 20px;
