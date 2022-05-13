@@ -5,6 +5,7 @@ import footIcon1 from "../../../assets/images/foot-icon-1.png";
 import footIcon2 from "../../../assets/images/foot-icon-2.png";
 import footIcon3 from "../../../assets/images/foot-icon-3.png";
 import footIcon4 from "../../../assets/images/foot-icon-4.png";
+import { Link } from "react-router-dom";
 const HomeFooter = () =>{
     return(
         <footer>
@@ -13,7 +14,9 @@ const HomeFooter = () =>{
                      <div className="hfoot-sec">
                         <div className="hfoot-content1">
                             <div className="hfoot-image">
-                                <img src={footImage} alt="logo-footer"/>
+                                <Link to = "/">
+                                    <img src={footImage} alt="logo-footer"/>
+                                </Link>
                             </div>
                             <p>
                                 Lorem ipsum aras beskade nede plakar. Sad monorade. Soven fade negon. 
@@ -21,10 +24,10 @@ const HomeFooter = () =>{
                             </p>
                             <ul>
                                 <li>
-                                <a href="#"><img src={footIcon1} alt="foot-icon"/></a>
-                                <a href="#"><img src={footIcon2} alt="foot-icon"/></a>
-                                <a href="#"><img src={footIcon3} alt="foot-icon"/></a>
-                                <a href="#"><img src={footIcon4} alt="foot-icon"/></a>
+                                <Link to="#"><img src={footIcon1} alt="foot-icon"/></Link>
+                                <Link to="#"><img src={footIcon2} alt="foot-icon"/></Link>
+                                <Link to="#"><img src={footIcon3} alt="foot-icon"/></Link>
+                                <Link to="#"><img src={footIcon4} alt="foot-icon"/></Link>
                                 </li>
                             </ul>
                         </div>
@@ -32,22 +35,22 @@ const HomeFooter = () =>{
                             <h5>Huis kopen met Plotcore Living</h5>
                             <ul>
                                 <li>
-                                <a to="#">Hoe het werkt</a>
+                                <Link to="#">Hoe het werkt</Link>
                                 </li>
                                 <li>
-                                <a to="#">Plotcore Alles-in-1</a>
+                                <Link to="#">Plotcore Alles-in-1</Link>
                                 </li>
                                 <li>
-                                <a to="#">Plotcore Plus</a>
+                                <Link to="#">Plotcore Plus</Link>
                                 </li>
                                 <li>
-                                <a to="#">Plotcore webinar</a>
+                                <Link to="#">Plotcore webinar</Link>
                                 </li>
                                 <li>
-                                <a to="#">Prijzen</a>
+                                <Link to="#">Prijzen</Link>
                                 </li>
                                 <li>
-                                <a to="#">For Expats</a>
+                                <Link to="#">For Expats</Link>
                                 </li>
                             </ul>
                         </div>
@@ -57,38 +60,38 @@ const HomeFooter = () =>{
                                 <div className="hfoot-list-content">
                                     <ul>
                                         <li>
-                                        <a to="#">Wie is Plotcore</a>
+                                        <Link to="#">Wie is Plotcore</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Neem contact op</a>
+                                        <Link to="#">Neem contact op</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Veelgestelde vragen</a>
+                                        <Link to="#">Veelgestelde vragen</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Blog</a>
+                                        <Link to="#">Blog</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Werken bij Plotcore</a>
+                                        <Link to="#">Werken bij Plotcore</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Vriendenkorting</a>
+                                        <Link to="#">Vriendenkorting</Link>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="hfoot-list-content">
                                     <ul>
                                         <li>
-                                        <a to="#">Privacy</a>
+                                        <Link to="#">Privacy</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Voorwaarden</a>
+                                        <Link to="#">Voorwaarden</Link>
                                         </li>
                                         <li>
-                                        <a to="#">Nederlands</a>
+                                        <Link to="#">Nederlands</Link>
                                         </li>
                                         <li>
-                                        <a to="#">English</a>
+                                        <Link to="#">English</Link>
                                         </li>
                                     </ul>
                                 </div>
