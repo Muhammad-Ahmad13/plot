@@ -2,11 +2,11 @@
     max-width: 202px;
 }
 .home-data li{
-    margin:20px 10px 5px 10px;
+    margin:20px 7px 5px 7px;
 }
 .home-data li a {
     color: #121212;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "giloryMedium";
     position: relative;
     display: inline-block;
@@ -40,6 +40,14 @@
 }
 .home-list-btn li a:hover{
     color: #fff;
+}
+/*login modal */
+.login-modal .modal .modal-dialog .modal-content{
+    border: none;
+    outline: none;
+}
+.login-modal .sign-main .sign-sec{
+    width: 100%;
 }
 @media screen  and (max-width:1024px){
     /* .home-main a.navbar-brand img{

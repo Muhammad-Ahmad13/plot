@@ -3,10 +3,11 @@ import "./HomeHeader.css";
 import logo from "../../../assets/images/logo-image.png";
 import icon from "../../../assets/images/burger-icon-icon-removebg-preview.png";
 import { Link } from "react-router-dom";
+import Login from "../../Navigationpages/Login";
 const HomeHeader = () =>{
     return(
     <header>
-        <nav className="navbar navbar-expand-lg  home-main">
+         <nav className="navbar navbar-expand-lg  home-main">
             <div className="container">
             <Link className="navbar-brand" to="/"><img src={logo} alt="logo_image"/></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +37,17 @@ const HomeHeader = () =>{
                     </li>
                     <div className="home-list-btn">
                     <li class="nav-item">
-                        <Link className="nav-link" to ="/login">Gratis infomatiegesprek</Link>
-                    </li>
+                        {/* <Link className="nav-link" to="/login">Gratis infomatiegesprek</Link> */}
+                            <Link className="nav-link" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
+                        </li>
                     </div>
                     </ul>
+                    <Login/>
                 </div>
             </div>
-            </div>
-        </nav>        
+        </div>
+        </nav>
+        
     </header>
     );
 }

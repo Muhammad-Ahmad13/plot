@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./SignUP.css";
 const SignUP = () =>{
     return(
+        <>
         <div className="sign-main">
             <div className="sign-sec">
                  <h4>Signup</h4>
@@ -28,10 +29,11 @@ const SignUP = () =>{
                     </div>
                 </form>
                 <div className="sign-data">
-                    <p>Already have an Account ? <span><Link to="/login">Login</Link></span></p>
+                    <p>Already have an Account ? <span><Link to="/">Login</Link></span></p>
                 </div>
             </div>
         </div>
+        </>             
     );
 }
 export default SignUP;
