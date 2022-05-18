@@ -39,7 +39,7 @@
     text-align: center;
 }
 .home-list-btn li a:hover{
-    color: #fff;
+    color: #fff !important;
 }
 /*login modal */
 .login-modal .modal .modal-dialog .modal-content{

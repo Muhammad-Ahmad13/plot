@@ -5,8 +5,8 @@ const SignUP = () =>{
     return(
         <>
         <div className="sign-main">
-            <div className="sign-sec">
-                 <h4>Signup</h4>
+            <div className="sign-sec shadow-none">
+                 {/* <h4>Signup</h4> */}
                 <form>
                     <div className="sign-input">
                         <label>Name</label>
@@ -28,9 +28,9 @@ const SignUP = () =>{
                         <button>Signup</button>
                     </div>
                 </form>
-                <div className="sign-data">
+                {/* <div className="sign-data">
                     <p>Already have an Account ? <span><Link to="/">Login</Link></span></p>
-                </div>
+                </div> */}
             </div>
         </div>
         </>             

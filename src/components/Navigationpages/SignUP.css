@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 .sign-sec h4{
     color: #1E87F0;
@@ -59,12 +58,14 @@
 .login-tabs .nav-link {
     color: #1E87F0 !important;
     font-size: 18px;
+    font-family: "giloryBold";
     border: none !important;
     width: 100%;
 }
 .login-tabs .nav-link.active {
     color: #495057 !important;
     background-color: #dee2e6 !important;
+    font-family: "giloryBold";
     border-top: 2px solid #1E87F0 !important;
     width: 100%;
     border-radius: 0;
@@ -73,6 +74,9 @@
     border-bottom: 1px solid rgb(143, 141, 141);
     margin-bottom: 20px;
 }
+/* #sign-forgot{
+    display: none;
+} */
 @media screen and (max-width:768px){
     .sign-sec{
         width: 90%;
