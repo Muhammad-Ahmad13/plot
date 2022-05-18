@@ -3,7 +3,7 @@ import "./HomeHeader.css";
 import logo from "../../../assets/images/logo-image.png";
 import icon from "../../../assets/images/burger-icon-icon-removebg-preview.png";
 import { Link } from "react-router-dom";
-import Login from "../../Navigationpages/Login";
+import ModalSignLog from "../../Navigationpages/ModalSignLog";
 const HomeHeader = () =>{
     return(
     <header>
@@ -38,11 +38,11 @@ const HomeHeader = () =>{
                     <div className="home-list-btn">
                     <li class="nav-item">
                         {/* <Link className="nav-link" to="/login">Gratis infomatiegesprek</Link> */}
-                            <Link className="nav-link" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
+                            <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
                         </li>
                     </div>
                     </ul>
-                    <Login/>
+                    <ModalSignLog />
                 </div>
             </div>
         </div>
