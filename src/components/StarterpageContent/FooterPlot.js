@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterPlot.css"
+import { Link } from "react-router-dom";
 const FooterPlot=()=>{
     return(
         <footer>
@@ -13,10 +14,9 @@ const FooterPlot=()=>{
                         <p>
                             © 2019 Copyright &amp; Protected by Interview Guide
                         </p>
-                        <a href="#">Twitter .</a>
-                        <a href="#">Instagram.</a>
-                        <a href="#">Dribble</a>
-
+                        <Link to="#">Twitter .</Link >
+                        <Link to="#">Instagram.</Link >
+                        <Link to="#">Dribble</Link >
                     </div>
                     <div className="footer-content">
                         <h4>
@@ -25,18 +25,18 @@ const FooterPlot=()=>{
                         <div className="nav-list-main">
                             <div className="nav-list-content">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Contact US</a></li>
+                                    <li><Link to="#">Home</Link ></li>
+                                    <li><Link to="#">Blog</Link ></li>
+                                    <li><Link to="#">Careers</Link ></li>
+                                    <li><Link to="#">Contact US</Link ></li>
                                 </ul>
                             </div>
                             <div className="nav-list-content">
                                 <ul>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Cookies</a></li>
+                                    <li><Link to="#">FAQs</Link ></li>
+                                    <li><Link to="#">Terms</Link ></li>
+                                    <li><Link to="#">Privacy</Link ></li>
+                                    <li><Link to="#">Cookies</Link ></li>
                                 </ul>
                             </div>
                         </div>

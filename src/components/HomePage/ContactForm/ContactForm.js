@@ -13,7 +13,6 @@ const ContactForm = () =>{
                             Lorem ipsum georening bukoska vaben. Dogyns eurong. 
                             Povisovis josm, emedan semis. Harat rar par. 
                         </p>
-
                     </div>
                     <div className="contact-content2">
                         <form>

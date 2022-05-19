@@ -27,16 +27,12 @@ const options ={
         },
         1000: {
             items: 2,
-
         },
         1025: {
             items: 3,
-
         }
     },
 }; 
-
-
 const Testimonial=()=>{
     return(
         <div className="owl-sec">
@@ -97,7 +93,7 @@ const Testimonial=()=>{
                     testicon3={teiter}
                     />
                 </div>
-                <div className="item">
+                {/* <div className="item">
                     <TestimonialCard
                     testimg={test1}
                     testtitle="Brian"
@@ -134,7 +130,7 @@ const Testimonial=()=>{
                     testicon2={insta}
                     testicon3={teiter}
                     />
-                </div>
+                </div> */}
             </OwlCarousel>
             </div>
             </div>

@@ -8,16 +8,16 @@ import { Link } from "react-router-dom";
 const StarterHeader=()=>{
     return(
         <header>
-        <nav class="navbar navbar-expand-md  nav_main">
-            <div class="container">
-            <Link class="navbar-brand" to ="/"><img src={logo} alt="logo_image"/></Link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
+        <nav className="navbar navbar-expand-md  nav_main">
+            <div className="container">
+            <Link className="navbar-brand" to ="/"><img src={logo} alt="logo_image"/></Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon">
                     <img src={icon} alt="Buger-icon"/>
                 </span>
             </button>
-            <div class="ml-auto burger-nav">
-                <div class="collapse navbar-collapse nav-content" id="navbarNav">
+            <div className="ml-auto burger-nav">
+                <div className="collapse navbar-collapse nav-content" id="navbarNav">
                     <div className="starter-anc">
                         <Link to ="#">Direct Starten</Link>
                     </div>

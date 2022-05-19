@@ -21,13 +21,9 @@ const ImprovementMain = () =>{
                     {/* <div className="improve-content2">
                         <img src={improveImg} alt="improve-img">
                         </img>
-
                     </div> */}
-
                 </div>
-
             </div>
-           
         </div>
     )
 }

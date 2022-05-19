@@ -29,14 +29,14 @@ const HomeHeader = () =>{
                     <li className="nav-item">
                         <Link className="nav-link" to ="#">Hoe het werkt</Link>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                         <Link className="nav-link" to ="#">Prijzen</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to ="/starter">Starter</Link>
                     </li>
                     <div className="home-list-btn">
-                    <li class="nav-item">
+                    <li className="nav-item">
                         {/* <Link className="nav-link" to="/login">Gratis infomatiegesprek</Link> */}
                             <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
                         </li>

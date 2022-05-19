@@ -12,8 +12,8 @@ const Forgot = () =>{
                         <input placeholder="Enter your Email" required/>
                     </div>
                     
-                    <div className="sign-anc">
-                        <button>Forgot Password</button>
+                    <div className="sign-anc text-center">
+                        <button>Submit</button>
                     </div>
                     {/* <Link to="">back to login</Link> */}
                 </form>

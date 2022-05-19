@@ -23,10 +23,10 @@ const ChangePassword = () =>{
                         <button>Reset Password</button>
                     </div>
                 </form>
-                <div className="sign-data">
+                {/* <div className="sign-data">
                     <span><Link to="/forgot">Forgot Password ?</Link></span>
                     <p>Don't have an Account ? <span><Link to="/signup">Sign Up</Link></span></p>
-                </div> 
+                </div>  */}
             </div>
         </div>
     );
