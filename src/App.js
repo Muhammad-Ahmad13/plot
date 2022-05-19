@@ -13,7 +13,7 @@ function App() {
         <Route exact path ='/' element ={<HomePage />}></Route>
         <Route exact path ='/signup' element ={<SignUP />}></Route>
         <Route exact path ='/login' element ={<ModalSignLog />}></Route>
-        <Route exact path ='/forgot' element ={<Forgot />}></Route>
+        {/* <Route exact path ='/forgot' element ={<Forgot />}></Route> */}
         <Route exact path ='/changepass' element ={<ChangePassword />}></Route>
         <Route  path='/starter' element={<Starter />}></Route>
       </Routes>

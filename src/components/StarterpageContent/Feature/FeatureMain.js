@@ -9,11 +9,9 @@ const FeatureMain=()=>{
                 <div className="Feat-main">
                     <div className="Feat-content1">
                         <FeaturesSec></FeaturesSec>
-
                     </div>
                     <div className="Feat-content2">
                         <Worthy></Worthy>
-
                     </div>
                 </div>
             </div>

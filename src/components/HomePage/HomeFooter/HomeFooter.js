@@ -31,7 +31,7 @@ const HomeFooter = () =>{
                                 </li>
                             </ul>
                         </div>
-                        <div class="hfoot-content2">
+                        <div className="hfoot-content2">
                             <h5>Huis kopen met Plotcore Living</h5>
                             <ul>
                                 <li>
@@ -54,7 +54,7 @@ const HomeFooter = () =>{
                                 </li>
                             </ul>
                         </div>
-                        <div class="hfoot-content3">
+                        <div className="hfoot-content3">
                             <h5>Huis kopen met Plotcore Living</h5>
                             <div className="hfoot-listing">
                                 <div className="hfoot-list-content">
