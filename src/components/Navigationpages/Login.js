@@ -6,26 +6,23 @@ const Login = () =>{
     const [loginMail,setLoginMail] = useState("");
     const [passwordLogin , setPasswordLogin] = useState("");
     const [show , setShow] = useState(true)
-    const [count , setCount] = useState(0);
+    // const [count , setCount] = useState(0);
     const handleSubmitLogin = (e) =>{
         e.preventDefault();
-        console.log("works")
         console.log(passwordLogin)
         console.log(loginMail)
+        setLoginMail('');
+        setPasswordLogin('');
     }
     const handleClick = () =>{
         setShow(!show)
-    }
-       
+    } 
     useEffect(() =>{
-        // setTimeout(() => {
-        //     setCount((count)=> count + 1);
-        // }, 1000);
+       
         return() =>{
-        //    setPasswordLogin(passwordLogin)
-        //    setLoginMail(loginMail)
+        
         }
-    },[setLoginMail, setPasswordLogin]);
+    },[]);
     return(
         // <div className="sign-main">
         //     <div className="sign-sec">
@@ -69,7 +66,7 @@ const Login = () =>{
                 <div className="sign-sec shadow-none"  >
                     {show ?
                     <div id="sign-visible">
-                        <form>
+                        <form onSubmit={handleSubmitLogin}>
                             <div className="sign-input">
                                 <label>Email</label>
                                 <input 
@@ -77,6 +74,8 @@ const Login = () =>{
                                     placeholder="Enter your Email"
                                     autoComplete="off" 
                                     name="lemail"
+                                    value={loginMail}
+                                    onChange={(e) => setLoginMail(e.target.value)} 
                                     required
                                 />
                             </div>
@@ -87,6 +86,8 @@ const Login = () =>{
                                     placeholder="Password"
                                     autoComplete="off"
                                     name="lpassword" 
+                                    onChange={(e) => setPasswordLogin(e.target.value)}
+                                    value={passwordLogin}
                                     required
                                 />
                             </div>
