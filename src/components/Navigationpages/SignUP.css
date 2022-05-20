@@ -74,9 +74,16 @@
     border-bottom: 1px solid rgb(143, 141, 141);
     margin-bottom: 20px;
 }
-/* #sign-forgot{
-    display: none;
-} */
+.sign-abs{
+    position: relative;
+}
+.passerror{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom:5px;
+    font-style: italic;
+}
 @media screen and (max-width:768px){
     .sign-sec{
         width: 90%;
