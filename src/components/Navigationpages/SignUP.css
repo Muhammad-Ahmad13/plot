@@ -26,11 +26,12 @@
     width: 100%;
     border: 1px solid rgb(143, 141, 141);
     outline: none;
-    padding: 8px 10px;
+    /* padding: 8px 10px 8px 30px; */
+    padding: 10px 8px;
     border-radius:5px;
     margin-bottom: 25px;
 }
-.sign-anc button{
+.sign-anc button {
     background-color: #1E87F0;
     color: #fff;
     font-size: 22px;
@@ -39,6 +40,20 @@
     padding: 10px 35px;
     border: none;
 }
+/*login button style*/
+.sign-anc a {
+    background-color: #1E87F0;
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    border-radius: 6px;
+    padding: 10px 35px;
+    border: none;
+}
+.sign-anc a:hover{
+    color: #fff;
+}
+/*end login button style*/
 .sign-data  a{
     color: #1E87F0;
     font-size: 20px;
@@ -83,6 +98,20 @@
     position: absolute;
     bottom:5px;
     font-style: italic;
+}
+.passeye{
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    top: 43px;
+    right: 15px;
+}
+.mail-image{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 42px;
+    left: 2px;
 }
 @media screen and (max-width:768px){
     .sign-sec{

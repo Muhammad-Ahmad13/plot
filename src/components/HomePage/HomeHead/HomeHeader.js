@@ -41,8 +41,11 @@ const HomeHeader = () =>{
                             <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
                         </li>
                     </div>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="#" >Logout</Link>
+                    </li>
                     </ul>
-                    <ModalSignLog />
+                    <ModalSignLog /> 
                 </div>
             </div>
         </div>
