@@ -1,8 +1,10 @@
 .contact-main{
-    background-image:url("../../../assets/images/form-bg.png");
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../../assets/images/form-bg.png");
+    /* background-image:; */
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 100px 0;
+    margin-bottom: 50px;
 }
 .contact-sec{
     display: flex;

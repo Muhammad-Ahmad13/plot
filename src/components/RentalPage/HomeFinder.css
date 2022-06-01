@@ -1,0 +1,76 @@
+.findermain{
+    background-color: #EEF2FC;
+    padding: 70px 0;
+}
+.findersec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.findercontent1{
+    width: 50%;
+}
+.findercontent2{
+    width: 45%;
+    background-image: url(../../assets/images/finderbg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
+}
+.findercontent2 img{
+    margin-top: 100px;
+}
+.findercontent1 h3{
+   margin: 0;
+   color: #231F20;
+   font-family: "giloryBold";
+   font-size: 30px; 
+   padding: 0 0 20px 0;
+}
+.findercontent1 p{
+   margin: 0;
+   padding: 0 0 15px 0;
+   font-size: 22px;
+   color: #353535;
+   font-family: "giloryMedium";
+}
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .findercontent2{
+        background-size: 100%;
+    }
+    .findercontent2 img{
+        margin-top: 220px;
+    }
+}
+@media screen and (max-width:768px) {
+    .findercontent2{
+        background-size: 100% 80%;
+    }
+    .findercontent2 img{
+        margin-top: 100px;
+    }
+    .findersec{
+        flex-direction: column;
+    } 
+    .findercontent1{
+        width: 100%;
+    }
+    .findercontent2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .findermain{
+        padding: 40px 0;
+    }
+    .findercontent1 h3{
+        font-size: 22px; 
+        padding: 0 0 15px 0;
+     }
+     .findercontent1 p{
+        font-size: 18px;
+     }
+     .findercontent2 img{
+        margin-top: 50px;
+    }
+}

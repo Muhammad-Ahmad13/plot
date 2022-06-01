@@ -1,0 +1,46 @@
+.WorkStarterContent{
+    display: flex;
+    justify-content: space-between;
+}
+.mainstarter{
+    background-color: #EEF2FC;
+    padding: 30px 0 50px 0;
+}
+.Workstarter-bg{
+    background-image: url("../../../assets/images/starterworkbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+.workstarterHead{
+    padding: 30px 0;
+}
+.StarterContent{
+    width: 30%;
+    padding: 30px 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.workstarter-anc{
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+.workstarter-anc a{
+    background: #1E87F0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    padding: 15px 18px;
+}
+.workstarter-anc a:hover{
+    color: #fff;
+}
+@media screen and (max-width:576px) {
+    .WorkStarterContent{
+       flex-direction: column;
+    }
+    .StarterContent{
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+}

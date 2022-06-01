@@ -1,0 +1,26 @@
+.workcard-main h3{
+    font-size: 44px;
+    color: #122256;
+    font-family: "giloryBold";
+}
+.workcard-image{
+    width: 67px;
+    height: 54px;
+    margin: 15px auto;
+}
+.workcard-main p{
+    font-size: 22px;
+    color: #122256;
+    font-family: "giloryMedium";
+    text-align: center;
+}
+@media screen and (max-width:992px) {
+    .workcard-main p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    .workcard-main h3 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,52 @@
+.rentalstepcontent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.rentalstepsec h6{
+    color: #231F20;
+    font-size: 60px;
+    text-align: center;
+    font-family: "giloryBold";
+    margin: 0;
+    padding: 50px 0;
+}
+.rentalstepdata{
+    width: 45%;
+    margin: auto 0;
+}
+.rentalstepimage{
+    width: 45%;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .rentalstepsec h6{
+        font-size: 48px;
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width:768px){
+    .rentalstepsec h6{
+        font-size: 40px;
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width:576px){
+    .rentalstepcontent{
+       flex-direction: column;
+    }
+    .rentalstepcontent:nth-of-type(2){
+        flex-direction: column-reverse;
+     }
+    .rentalstepdata{
+        width: 90%;
+    }
+    .rentalstepimage{
+        width: 90%;
+        margin: 15px auto;
+    }
+    .rentalstepsec h6{
+        font-size: 26px;
+        padding: 30px 0 0 0;
+    }
+}

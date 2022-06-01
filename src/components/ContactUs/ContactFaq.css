@@ -1,0 +1,43 @@
+.faqAccordionMain{
+    /* background-color: transparent; */
+    /* border: none !important;
+    outline: none !important; */
+    width: 80%;
+    margin: 0 auto;
+}
+.faqmain h1{
+    font-size: 50px;
+    color: #231F20;
+    font-family: "giloryBold";
+    text-align: center;
+    padding: 15px 0;
+}
+.faqAccordion {
+    border: none !important;
+    background-color: #EEF2FC !important;
+    outline: none !important;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.faqAccordion h2 button{
+    background-color: #EEF2FC !important;
+    color: #231F20 !important;
+    font-size: 25px;
+    font-family: "giloryBold";
+    outline: none !important;
+    border-radius: 10px;
+}
+@media screen and (max-width:768px) {
+    .faqAccordion h2 button{
+        font-size: 20px;
+    } 
+}
+@media screen and (max-width:576px) {
+    .faqAccordionMain{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .faqAccordion h2 button{
+        font-size: 16px;
+    } 
+}

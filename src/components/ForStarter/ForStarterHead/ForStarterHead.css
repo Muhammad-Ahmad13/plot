@@ -1,0 +1,72 @@
+.starterHeadmain{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/images/starterheaderbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 150px 0;
+    text-align: center;
+}
+.starterHeadContent h4{
+    color: #1E87F0;
+    font-size: 25px;
+    font-family: "giloryMedium";
+}
+.starterHeadContent p{
+    color: #fff;
+    font-size: 70px;
+    font-family: "giloryBold";
+    max-width: 820px;
+    margin: 0 auto;
+}
+.starterHeadContent h5{
+    color: #fff;
+    font-size: 35px;
+    font-family: "giloryMedium";
+    max-width: 630px;
+    margin: 0 auto;
+}
+.starterHeadContent .starterHead-anc{
+    margin: 40px 0 0 0;
+}
+.starterHeadContent .starterHead-anc a{
+    background: #1E87F0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    padding: 15px 18px;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .starterHeadmain{
+        padding: 100px 0;
+    }
+    .starterHeadContent p{
+        font-size: 60px;
+    }
+}
+@media screen and  (max-width:768px){
+    .starterHeadmain{
+        padding: 100px 0;
+    }
+    .starterHeadContent p{
+        font-size: 48px;
+    }
+    .starterHeadContent h5{
+        font-size: 30px;
+    }
+}
+@media screen and  (max-width:576px){
+    .starterHeadmain{
+        padding: 60px 0;
+    }
+    .starterHeadContent h4{
+        font-size: 22px;
+    }
+    .starterHeadContent p{
+        font-size: 26px;
+        max-width: unset;
+    }
+    .starterHeadContent h5{
+        font-size: 26px;
+        max-width: unset;
+    }
+}

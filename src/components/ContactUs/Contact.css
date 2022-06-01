@@ -1,0 +1,41 @@
+.contactmaster{
+    background: linear-gradient(180deg, #EEF2FC 55%, #FFFF 45%);
+    /* background-repeat: repeat-x;
+    background-size: 50%; */
+}
+.contact-major{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-major-content1{
+    width: 40%;
+    background-image: url("../../assets/images/rectangleContact.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 50px;
+}
+.contact-major-content2{
+    width: 60%;
+}
+@media screen and (max-width:768px) and (min-width:667px){
+    .contact-major{
+       flex-direction: column;
+    }
+    .contact-major-content1{
+        width: 100%;
+    }
+    .contact-major-content2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px){
+    .contact-major{
+        flex-direction: column;
+     }
+     .contact-major-content1{
+         width: 100%;
+     }
+     .contact-major-content2{
+         width: 100%;
+     }
+}
