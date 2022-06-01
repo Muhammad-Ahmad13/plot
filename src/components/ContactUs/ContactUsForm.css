@@ -1,0 +1,88 @@
+.usform-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.usform-main{
+    width: 80%;
+    margin: 40px auto 0;
+}
+.usform-main h4{
+    font-size:50px;
+    color: #231F20;
+    font-family: "giloryBold";
+    text-align: center;
+}
+.usform-main p{
+    font-size:22px;
+    color: #353535;
+    font-family: "giloryMedium";
+    text-align: center;
+    margin: 0;
+}
+.usform-form{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #000;
+    border-radius: 8px;
+    padding: 50px 25px;
+    margin-top: 30px;
+}
+.input-width1{
+    width: 45%;
+}
+.input-width2{
+    width:100%;
+}
+.usform-input input{
+    width: 100%;
+    background-color: #EEF2FC;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 11px 8px 11px 8px;
+    margin-bottom: 20px;
+}
+.usform-input label{
+    font-size: 22px;
+    color: #231F20;
+    margin-bottom: 10px;
+    font-family: "giloryBold";
+}
+.usform-input textarea{
+    width: 100%;
+    background-color: #EEF2FC;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 11px 8px 11px 8px;
+}
+.usformanc{
+    margin: 20px auto 0;
+}
+.usformanc a{
+    color: #FFFFFF;
+    background-color: #1E87F0;
+    font-size: 22px;
+    font-family: "giloryBold";
+    border-radius: 10px;
+    padding: 8px 25px;
+}
+@media screen and (max-width:768px){
+    .usform-main h4{
+        font-size:40px;
+    }
+}
+@media screen and (max-width:576px){
+    .usform-main h4{
+        font-size:30px;
+    }
+    .usform-main p{
+        font-size:16px;
+    }
+    .usform-main{
+        width: 90%;
+    }
+    .input-width1{
+        width: 100%;
+    }
+}

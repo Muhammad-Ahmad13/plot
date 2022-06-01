@@ -1,0 +1,43 @@
+.plotStarterSec{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.plotStarterContent1{
+    width: 64%;
+}
+.plotStarterContent1 p{
+    color: #231F20;
+    font-size: 35px;
+    font-family: "giloryBold";
+}
+.plotStarterContent2{
+    width: 30%;
+}
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+    .plotStarterContent1 p {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width:768px) {
+    /* .plotStarterSec{
+       flex-direction: column;
+    } */
+    .plotStarterSec{
+        padding: 30px 0;
+    }
+    .plotStarterContent1 p {
+        font-size: 20px;
+    }
+    .plotStarterContent1{
+        width: 70%;
+    }
+}
+@media screen and (max-width:576px) {
+    .plotStarterSec{
+       flex-direction: column;
+    }
+    .plotStarterContent1, .plotStarterContent2{
+        width: 100%;
+    }
+}

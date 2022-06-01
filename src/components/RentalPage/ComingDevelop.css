@@ -1,0 +1,80 @@
+.comingmain{
+    background-color: #1E87F0;
+    padding: 100px 0;
+    position: relative;
+}
+.comingcontent p{
+    color: #fff;
+    font-family: "giloryBold";
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 35px 0;
+    max-width: 1000px;
+}
+.cominganc{
+    text-align: center;
+}
+.cominganc a {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: "giloryBold";
+    text-align: center;
+    background-color: #231F20;
+    padding: 15px 18px;
+    border-radius: 10px;
+}
+.comingimage1 img{
+    max-width: 200px;
+}
+.comingimage2 img{
+    max-width: 300px;
+}
+.developabs1{
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.developabs2{
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+}
+.developabs3{
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+}
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .comingcontent p{
+        font-size: 40px;
+    }
+    .developabs1{
+        top: -50px;
+    }
+}
+@media screen and (max-width:768px){
+    .comingcontent p{
+        font-size: 36px;
+    }
+    .cominganc a {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+@media screen and (max-width:576px){
+    .comingcontent p{
+        font-size: 24px;
+    }
+    .comingimage2 img{
+        max-width: 230px;
+    }
+    .comingmain{
+        padding: 100px 0 150px 0;
+    }
+}
+@media screen and (max-width:320px){
+    .comingimage2 img{
+        max-width: 200px;
+    }
+}

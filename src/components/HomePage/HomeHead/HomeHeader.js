@@ -19,21 +19,19 @@ const HomeHeader = () =>{
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav home-data">
                     <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" to ="#">
-                            Kopen met Plotcore
-                        </Link>
+                        <Link className="nav-link" aria-current="page" to ="#">Kopen met Plotcore</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to ="#">Zelf berekenen</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to ="#">Hoe het werkt</Link>
+                        <Link className="nav-link" to ="/rental">Hoe het werkt</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to ="#">Prijzen</Link>
+                        <Link className="nav-link" to ="/contactus">Prijzen</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to ="/starter">Starter</Link>
+                        <Link className="nav-link" to ="/forstarter">Starter</Link>
                     </li>
                     <div className="home-list-btn">
                     <li className="nav-item">
@@ -41,9 +39,9 @@ const HomeHeader = () =>{
                             <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
                         </li>
                     </div>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link className="nav-link" to="#" >Logout</Link>
-                    </li>
+                    </li> */}
                     </ul>
                     <ModalSignLog /> 
                 </div>

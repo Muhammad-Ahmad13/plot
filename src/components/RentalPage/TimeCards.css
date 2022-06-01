@@ -1,0 +1,34 @@
+.timecardmain{
+    text-align: center;
+}
+.timeimage img{
+    width: 37px;
+    height: 37px;
+}
+.timeimage{
+    background-color: #1E87F0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.timecardmain p{
+    font-size: 30px;
+    font-family: "giloryBold";
+    color: #122256;
+    margin: 0;
+    padding: 20px 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .timecardmain p{
+        font-size: 24px; 
+    }
+}
+@media screen and (max-width:768px){
+    .timecardmain p{
+        font-size: 20px; 
+    }
+}

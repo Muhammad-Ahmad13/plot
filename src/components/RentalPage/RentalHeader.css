@@ -1,0 +1,65 @@
+.rentalheadcontent{
+    position: relative;
+    z-index: -1;
+}
+
+.rentalheadcontent p{
+    font-size: 50px;
+    color: #231F20;
+    font-family: "giloryBold";
+    max-width: 720px;
+    margin: 50px auto;
+    text-align: center;
+}
+.rentalImage img{
+    max-width: 80px;
+}
+.rentalabs1{
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.rentalabs2{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .rentalheadcontent p{
+        font-size: 42px;
+    }
+    .rentalabs1{
+        left: 50px;
+    }
+    .rentalabs2{
+        right: 50px;
+    }
+}
+@media screen and (max-width:768px){
+    .rentalheadcontent p{
+        font-size: 36px;
+    }
+    .rentalabs1{
+        top: -40px;
+        left: 15px;
+    }
+    .rentalabs2{
+        right: 50px;
+        bottom: -35px;
+    }
+}
+@media screen and (max-width:576px){
+    .rentalheadcontent p{
+        font-size: 26px;
+        /* margin: 100px auto; */
+        padding: 60px 0 50px 0;
+    }
+    .rentalabs1{
+        top: -40px;
+        left: 15px;
+    }
+    .rentalabs2{
+        right: 50px;
+        bottom: -45px;
+    }
+}
