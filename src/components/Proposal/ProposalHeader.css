@@ -1,0 +1,107 @@
+.proposalheadermain{
+    background-color: #EEF2FC;
+    background-image: url("../../assets/images/proposalbg1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.proposbg{
+    background-image: url("../../assets/images/plotimage.png");
+    background-repeat: no-repeat;
+    background-position: left bottom 20% ;
+}
+.proposalheaderdata{
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+}
+.proposalheaderdata h4{
+    color: #231F20;
+    font-size: 50px;
+    font-family: "giloryBold";
+    padding: 0px 0 15px;
+    max-width:670px;
+    margin: 0 auto;
+}
+.proposalheaderdata h6{
+    color: #1E87F0;
+    font-size: 40px;
+    font-family: "giloryBold";
+    margin: 0;
+    padding: 15px 0 15px;
+}
+.proposalheaderdata p{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    padding: 15px 0 15px;
+    max-width:720px;
+    margin: 0 auto;
+}
+.proposalanc{
+   text-align: center;
+   margin-top: 50px;
+}
+.proposalanc a{
+    color: #fff;
+    background-color: #1E87F0;
+    font-size: 22px;
+    font-family: "giloryBold";
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+.proposimageabs1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.proposimageabs2{
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.proposimageabs3{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .proposalheaderdata h4{
+        font-size: 42px;
+    }
+    .proposalheaderdata h6{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width:768px) {
+    .proposalheaderdata h4{
+        font-size: 40px;
+    }
+    .proposalheaderdata h6{
+        font-size: 36px;
+    }
+    .proposimageabs1{
+        top: 90px;
+    }
+    .proposimageabs2{
+        top: 90px;
+    }
+}
+@media screen and (max-width:576px){
+    .proposbg{
+        background-position: left bottom;
+    }
+    .proposalheaderdata h4{
+        font-size: 26px;
+    }
+    .proposalheaderdata h6{
+        font-size: 22px;
+        padding: 5px 0 5px;
+    }
+    .proposalheaderdata p{
+        font-size: 18px;
+        padding: 10px 0 10px;
+    }
+    .proposimageabs1,.proposimageabs2,.proposimageabs3{
+        display: none;
+    }
+}

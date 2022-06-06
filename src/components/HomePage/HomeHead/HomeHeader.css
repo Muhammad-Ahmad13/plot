@@ -74,6 +74,7 @@
         left: 0;
         background-color: #f0f0f0;
         transition: 0.3s ease-in-out;
+        z-index: 10;
     }
     .home-data{
         height: 89vh;

@@ -22,7 +22,7 @@ const HomeHeader = () =>{
                         <Link className="nav-link" aria-current="page" to ="#">Kopen met Plotcore</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to ="#">Zelf berekenen</Link>
+                        <Link className="nav-link" to ="/proposal">Zelf berekenen</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to ="/rental">Hoe het werkt</Link>
@@ -35,15 +35,15 @@ const HomeHeader = () =>{
                     </li>
                     <div className="home-list-btn">
                     <li className="nav-item">
-                        {/* <Link className="nav-link" to="/login">Gratis infomatiegesprek</Link> */}
-                            <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link>
+                        <Link className="nav-link" to="/login">Gratis infomatiegesprek</Link>
+                            {/* <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link> */}
                         </li>
                     </div>
                     {/* <li className="nav-item">
                         <Link className="nav-link" to="#" >Logout</Link>
                     </li> */}
                     </ul>
-                    <ModalSignLog /> 
+                    {/* <ModalSignLog />  */}
                 </div>
             </div>
         </div>

@@ -12,8 +12,9 @@ const Forgot = () =>{
         // firstRef.value= setForgetMail(forgetMail);
     }
     return(
-        <div className="sign-main">
-            <div className="sign-sec shadow-none">
+    <>
+        {/* <div className="sign-main"> */}
+            {/* <div className="sign-sec shadow-none"> */}
                 {/* <h4>Forget Password</h4> */}
                 <form onSubmit={handleForgetSubmit}>
                     <div className="sign-input">
@@ -38,8 +39,9 @@ const Forgot = () =>{
                     <span><Link to="/changepass">Change Password ?</Link></span>
                     <p>Don't have an Account ? <span><Link to="/signup">Sign Up</Link></span></p>
                 </div> */}
-            </div>
-        </div>
+             {/* </div> */}
+        {/* // </div> */}
+    </>
     );
 }
 export default Forgot;
