@@ -1,7 +1,9 @@
 .sign-main{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    width: 70%;
+    margin: 50px auto 0;
 }
 .sign-sec h4{
     color: #1E87F0;
@@ -12,7 +14,7 @@
     background-color: #fff;
     padding: 30px 20px;
     box-shadow: 0 0 10px grey;
-    width: 50%;
+    /* width: 50%; */
     border-radius: 8px;
 }
 .sign-input label{
