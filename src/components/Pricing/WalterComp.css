@@ -1,0 +1,54 @@
+.waltercomp h6{
+    color: #353535;
+    font-size: 25px;
+    font-family: "giloryMedium";
+    margin: 0;
+}
+.waltercomp h3{
+    color: #231F20;
+    font-size: 45px;
+    font-family: "giloryBold";
+    margin: 0;
+    padding: 15px 0;
+}
+.waltercomp p{
+    color: #231F20;
+    font-size: 22p;
+    font-family: "giloryMedium";
+    margin: 0;
+    max-width: 275px;
+    margin: 0 auto;
+}
+.waltercompanc a{
+    color: #FFFFFF;
+    background-color: #1E87F0;
+    font-size: 25px;
+    font-family: "giloryBold";
+    padding:15px 20px;
+    border-radius: 12px; 
+}
+.waltercompanc a:hover{
+    color: #FFFFFF;
+    background-color: #231F20;
+}
+.waltercompanc{
+    margin: 25px 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .waltercomp h3{
+        font-size: 36px;
+    }
+    .waltercompanc a{
+        font-size: 18px;
+        padding: 13px 15px;
+    }
+}
+@media screen and (max-width:768px){
+    .waltercomp h3{
+        font-size: 36px;
+    }
+    .waltercompanc a{
+        font-size: 18px;
+        padding: 13px 15px;
+    }
+}

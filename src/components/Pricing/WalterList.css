@@ -1,0 +1,22 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.waltercomplist ul li span img{
+    width: 17px;
+    margin-right: 10px;
+}
+.waltercomplist ul li span{
+    font-size: 22px;
+    font-family: "giloryMedium";
+    color: #0E0D0D;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .waltercomplist ul li span img{
+      
+        margin-right: 7px;
+    }
+    .waltercomplist ul li span{
+        font-size: 18px;
+    }
+}
