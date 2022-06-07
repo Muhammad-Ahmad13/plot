@@ -10,6 +10,7 @@ import ForStarter from './components/ForStarter/ForStarter';
 import ContactUs from './components/ContactUs/ContactUs';
 import RentalMain from './components/RentalPage/RentalMain';
 import ProposalMain from './components/Proposal/ProposalMain';
+import PricingMian from './components/Pricing/PricingMian';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         {/* <Route  path='/starter' element={<Starter />}></Route> */}
         <Route exact path='/rental' element = {<RentalMain/>}></Route>
         <Route exact path='/proposal' element = {<ProposalMain/>}></Route>
+        <Route exact path='/pricing' element = {<PricingMian/>}></Route>
       </Routes>
     </div>
   );

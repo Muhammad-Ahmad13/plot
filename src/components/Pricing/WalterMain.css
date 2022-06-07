@@ -1,0 +1,65 @@
+.waltermaster{
+    background-color: #f3f3f3;
+}
+.waltermain{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.waltersec{
+    width: 32%;
+    background-color:#fff;
+    padding: 35px 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    margin:20px 0;
+    border-radius: 8px;
+}
+.waltermain .waltersec:nth-of-type(3) p:nth-of-type(2){
+    color: #fff;
+}
+/* .waltersec:hover{
+    position: absolute;
+    background-color: #fff;
+    transform: scale(0.5);
+    transition: 0.3s all  ease-in-out;
+} */
+/* .waltersec{
+    position: relative;
+    /* overflow: hidden; */
+
+/* .waltersec:hover{ */
+    /* position: absolute; */
+    /* background-color: #fff; */
+    /* transform: scale(1); */
+    /* transition: 0.3s  ease-in-out; */
+/* }  */
+@media screen and (min-width:992px) and (max-width:1024px){
+    .waltersec{
+        padding: 35px 10px;
+    }
+}
+@media screen and (max-width:768px){
+    /* .waltermain{
+       flex-direction: column;
+    } */
+    .waltersec{
+        padding: 20px 10px;
+    }
+    .waltersec{
+        width: 45%;
+        /* background-color:#fff;
+        padding: 35px 15px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s all ease-in-out;
+        margin:20px 0;
+        border-radius: 8px; */
+    }
+}
+@media screen and (max-width:576px){
+    .waltersec {
+        width: 100%;
+    }
+}
