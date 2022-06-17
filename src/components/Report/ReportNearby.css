@@ -1,0 +1,33 @@
+.Nearbymain{
+    padding: 50px 0;
+}
+.Nearbycontent1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 41%;
+}
+.nearbyFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Nearbycontent2{
+    width: 50%;
+}
+/* .imgColor1 {
+    background-color: #D1D1D1;
+}
+.imgColor2{
+    background-color: #FF8845;
+} */
+@media screen and (max-width:768px){
+    .Nearbycontent1,.Nearbycontent2{
+        width: 97%;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width:576px){
+    .Nearbymain{
+        padding: 25px 0;
+    }
+}

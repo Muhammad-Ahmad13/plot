@@ -1,0 +1,17 @@
+.reportfactmain{
+    padding:25px 0 50px 0;
+}
+.reportfactsec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reportfactcontent{
+    width: 24%;
+}
+@media screen and (max-width:576px){
+    .reportfactcontent{
+        width: 90%;
+        margin: 0 auto 25px auto;
+    }
+}

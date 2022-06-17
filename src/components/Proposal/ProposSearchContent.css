@@ -53,6 +53,14 @@
     color: #fff;
     background-color: #231F20;
 }
+.anccolor1 a{
+    color: #2DF27C !important;
+    background-color: rgba(45, 242, 124, 0.2) !important;
+}
+.anccolor2 a{
+    color: #F01E1E !important;
+    background-color: rgba(240, 30, 30, 0.1) !important;
+}
 @media screen and (min-width:992px) and (max-width:1024px){
     .searchcontentmain h3{
         font-size: 36px;

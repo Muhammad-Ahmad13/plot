@@ -29,6 +29,8 @@
 }
 .modern-content1 span{
     color: #1E87F0;
+    font-size: 70px;
+    font-family:"giloryBold";
 }
 .modern-content1 p{
     color: #353535;
@@ -55,7 +57,7 @@
     .modern-sec{
         margin-top: 50px;
     }
-    .modern-content1 h4{
+    .modern-content1 h4,.modern-content1 span{
         font-size: 50px;
     } 
     .modern-content1 p{
@@ -71,7 +73,7 @@
     .modern-sec{
         margin-top: 30px;
     }
-    .modern-content1 h4{
+    .modern-content1 h4,.modern-content1 span{
         font-size: 40px;
     } 
     .modern-content1 p{
@@ -91,7 +93,7 @@
         width: 95%;
         padding: 0 10px;
     }
-    .modern-content1 h4{
+    .modern-content1 h4, .modern-content1 span{
         font-size: 32px;
     } 
     .modern-content1 p{

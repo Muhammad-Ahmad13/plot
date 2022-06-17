@@ -1,0 +1,63 @@
+.factcardmain{
+    background-color: #EBEFF9;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0 10px;
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.factcardmain span{
+    font-size: 50px;
+    color: #1E87F0;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.factcardmain h3{
+    font-size: 22px;
+    color: #231F20;
+    font-family: "giloryBold";
+    margin: 0;
+    padding: 12px 0;
+}
+.factcardmain p{
+    font-size: 20px;
+    color: #353535;
+    font-family: "giloryMedium";
+    margin: 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .factcardmain span{
+        font-size: 40px;
+    }
+    .factcardmain{
+        min-height: 280px;
+    }
+    .factcardmain h3{
+        font-size: 16px;
+    }
+    .factcardmain p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:768px){
+    .factcardmain span{
+        font-size: 30px;
+    }
+    .factcardmain{
+        min-height: 280px;
+    }
+    .factcardmain h3{
+        font-size: 16px;
+    }
+    .factcardmain p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:576px) {
+    .factcardmain{
+        min-height: 200px;
+    }
+}

@@ -1,0 +1,44 @@
+.rpropertymain{
+    background-color: #EEF2FC;
+    padding: 60px 0 100px 0;
+}
+.rpropertyanc a{
+    color: #1E87F0;
+    font-size: 22px;
+    font-family: "giloryBold";
+}
+.rpropertyanc a:hover{
+    color: #1E87F0;
+}
+.rpropertycard,.rPropertyEcard{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+}
+.rpropertycontent{
+    width: 23%;
+}
+.rpropertyEcontent{
+    width: 45%;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .rpropertycontent{
+        width: 24%;
+    }
+}
+@media screen and (max-width:768px){
+    .rpropertycontent{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:576px){
+    .rpropertymain{
+        padding: 35px 0 40px 0;
+    }
+    .rpropertycontent,.rpropertyEcontent{
+        width: 90%;
+        margin:0 auto 20px auto;
+    }
+}

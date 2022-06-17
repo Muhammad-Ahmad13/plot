@@ -1,0 +1,111 @@
+.packagecardmain{
+    background-color: #EDF1FB;
+    padding: 75px 20px 50px 20px;
+    border-radius: 10px;
+}
+.packagecardmain h3{
+    color: #0E0D0D;
+    font-size: 40px;
+    font-family: "giloryBold";
+    margin: 0;
+    text-align: center;
+}
+.packagecardmain h4{
+    color: #353535;
+    font-size: 25px;
+    font-family: "giloryMedium";
+    margin: 0;
+    text-align: center;
+    padding:20px 0;
+}
+.packagecardmain span{
+    color: #1E87F0;
+    font-size: 40px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.packagecardmain p{
+    color: #0E0D0D;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding:20px 0;
+}
+.packagecardmain ul li{
+    color: #0E0D0D;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0;
+    display: flex;
+    padding: 10px 0;
+}
+.packagecardmain ul li span{
+    background-color: #1E87F0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.packagecardmain ul li span img{
+    width: 17px;
+}
+.packageCardLabel label{
+    color: #1E87F0;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+.packageCardanc a{
+    color: #fff;
+    padding: 12px 15px;
+    background-color: #1E87F0;
+    border-radius: 8px;
+    font-size: 22px;
+    font-family: "giloryBold"; 
+}
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .packagecardmain{
+        padding: 75px 15px 50px 15px;
+    }
+    .packagecardmain h4, .packagecardmain p{
+        padding:10px 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .packagecardmain{
+        padding: 60px 10px 50px 10px;
+    }
+    .packagecardmain h4{
+        padding:10px 0;
+        font-size: 22px;    
+    }
+    .packagecardmain p{
+        padding:10px 0;
+        font-size: 16px;
+    }
+    .packagecardmain h3{
+        font-size: 32px;
+    }
+    .packagecardmain span{
+        font-size: 26px;
+    }
+    .packagecardmain ul li {
+        font-size: 16px;
+    }
+    .packagecardmain ul li span{
+        margin-right: 7px;
+    }
+    .packageCardanc a {
+        font-size: 18px;
+    }
+    .packageCardLabel label {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+}

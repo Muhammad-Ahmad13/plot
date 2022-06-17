@@ -1,0 +1,54 @@
+.tabcontain{
+    max-width: 2100px;
+    margin: 0 auto 0 0;
+    padding: 10px 10px;
+}
+.tabborder{
+    border-bottom: 2px solid #EFEFEF;
+}
+.tabdatasetmain{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabdataset1{
+    padding: 0px 15px 10px 15px;
+    width: 5%;
+    border-right: 2px solid #EFEFEF;
+}
+.tabdataset2{
+    padding: 20px 0px 0px 15px;
+    width: 80%;
+}
+@media screen and  (min-width:1366px) and (max-width:1440px) {
+    /* .tabcontain{
+        max-width: 1300px;
+    } */
+}
+@media screen and (min-width:992px) and (max-width:1024px) {
+    /* .tabcontain{
+        max-width: 960px;
+    } */
+    .tabdataset1{
+        width: 6%;
+    }
+}
+@media screen and (max-width:768px) {
+    /* .tabcontain{
+        max-width: 720px;   
+    } */
+    .tabdataset1{
+        padding: 0px 10px 10px 10px;
+        width: 8%;
+    }
+}
+@media screen and (max-width:576px) {
+    /* .tabcontain{
+        max-width: 375px;   
+    } */
+    .tabdataset1{
+        width: 16%;
+    }
+    .tabdataset2{
+        padding: 10px 0px 0px 25px;
+    }
+}

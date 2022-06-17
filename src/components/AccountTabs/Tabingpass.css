@@ -1,0 +1,56 @@
+.tpass-input label{
+    color: #231F20;
+    font-size: 22px;
+    font-family: "giloryBold";
+}
+.tpass-input input{
+    width: 100%;
+    background-color: #EEF2FC;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin: 5px 0 25px 0;
+}
+.tpass-abs{
+    position: relative;
+}
+.tpass-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.tpass-width{
+    width: 47%;
+}
+.tpass-width1{
+    width: 47%;
+}
+.tpass-twidth{
+    width: 80%;
+}
+.tpass-anc button{
+    outline: none;
+    background-color: #1E87F0;
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+@media screen and (max-width:768px){
+    .tpass-flex{
+        display: unset;  
+    }
+    .tpass-width, .tpass-width1{
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px){
+    .tpass-twidth{
+        width: 90%;
+    }
+    .tpass-input label, .tpass-anc button{
+        font-size: 18px;
+    }
+}

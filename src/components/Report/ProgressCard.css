@@ -1,0 +1,16 @@
+.progresscontentd{
+    display: flex;
+    justify-content: space-between;
+}
+.progresscontentd p, .progresscontentd h3{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryBold";
+    margin: 0;
+    padding: 8px 0;
+}
+@media screen and (max-width:768px){
+    .progresscontentd p, .progresscontentd h3{
+        font-size: 18px;
+    }
+}

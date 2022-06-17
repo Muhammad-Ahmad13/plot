@@ -1,0 +1,53 @@
+.minCard{
+    background-color: #1E87F0;
+    min-height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 0 5px;
+}
+.minCard h3{
+    color: #fff;
+    font-size: 25px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.minCard p{
+    color: #fff;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding:12px 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .minCard{
+        min-height: 174px;
+    }
+    .minCard h3{
+        font-size: 22px;
+    }
+    .minCard p{
+        font-size: 18px;
+        padding:12px 0;
+    } 
+}
+@media screen and (max-width:768px){
+    .minCard{
+        min-height: 174px;
+    }
+    .minCard h3{
+        font-size: 22px;
+    }
+    .minCard p{
+        font-size: 18px;
+        padding:12px 0;
+    } 
+}
+@media screen and (max-width:576px){
+    .minCard{
+        padding: 35px 3px;
+        min-height: 150px;
+    }
+}
