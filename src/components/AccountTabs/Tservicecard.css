@@ -1,0 +1,103 @@
+.servicecardmain{
+    background-color: #EEF2FC;
+    padding: 25px 15px;
+    border-radius: 10px;
+    min-height: 410px;
+}
+.servicecardmain h4{
+    color: #231F20;
+    font-size: 25px;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding-bottom: 10px;
+}
+.servicecardcontent h5{
+    color: #231F20;
+    font-size: 30px;
+    font-family: "giloryBold";
+    text-align: center;
+    margin: 0;
+}
+.servicecardcontent p{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0 auto;
+    text-align: center;
+    max-width:400px;
+    padding:5px 0;
+}
+.servicecardimage{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: #1E87F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.servicecardimage img{
+    width: 42px;
+}
+.servicecardanc1{
+    text-align: center;
+    margin-top: 15px;
+}
+.servicecardanc1 a{
+    background-color: #FFFFFF;
+    font-size: 22px;
+    color: #1E87F0;
+    font-family: "giloryBold";
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+.servicecardanc1 a:hover{
+    background-color:#1E87F0;
+    color:#FFFFFF;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .servicecardmain{
+        min-height: 350px;
+    }
+    .servicecardmain h4{
+        font-size: 22px;
+    }
+    .servicecardimage{
+        width: 85px;
+        height: 85px;
+    }
+    .servicecardcontent p{
+        font-size: 18px;
+    }
+    .servicecardcontent h5{
+        font-size: 24px;
+    }
+    .servicecardanc1 a{
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+@media screen and (max-width:768px){
+    .servicecardmain{
+        padding: 15px 15px;
+        min-height: 320px;
+    }
+    .servicecardmain h4{
+        font-size: 18px;
+    }
+    .servicecardimage{
+        width: 85px;
+        height: 85px;
+    }
+    .servicecardcontent p{
+        font-size: 15px;
+    }
+    .servicecardcontent h5{
+        font-size: 18px;
+    }
+    .servicecardanc1 a{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}

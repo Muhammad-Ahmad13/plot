@@ -1,0 +1,12 @@
+.contentstyle h4{
+    color: #1E87F0;
+    font-size: 60px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.contentstyle p{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0;
+}

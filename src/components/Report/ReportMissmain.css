@@ -1,0 +1,19 @@
+.Rmissmain{
+    padding: 50px 0;
+}
+.Rmisssec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Rmisscontent1, .Rmisscontent2{
+    width:45%;
+}
+@media screen and (max-width:768px){
+    .Rmisscontent1, .Rmisscontent2{
+        width:100%;
+    }
+    .Rmissmain{
+        padding: 25px 0;
+    }
+}

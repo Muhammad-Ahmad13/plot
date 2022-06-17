@@ -1,0 +1,29 @@
+.hsearchmain{
+    max-width: 500px;
+    margin: 25px auto 25px;
+    padding: 0 10px;
+    position: relative;
+}
+.hsearchmain a{
+    font-size: 22px;
+    font-family: "giloryBold";
+    color:#fff;
+    background-color:#1E87F0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    position: absolute;
+    right: 16px;
+    top: 4px;
+}
+.hsearchmain a:hover{
+    color:#fff;
+    background-color:#231F20;
+}
+.hsearchmain input{
+    border: none;
+    padding: 16px 12px;
+    border-radius: 8px;
+    background-color: #EBEFF9;
+    width: 100%;
+    outline: none;
+}

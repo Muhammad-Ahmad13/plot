@@ -30,7 +30,7 @@ const ProposSearchContent = () => {
         <div className="contentmaindata">
             <SearchContentData
             pdatahead="Idee"
-            pdatapara="Ik wil graag de WOZ-waarde langer dan een jaar zien. "
+            pdatapara="Ik wil graag de WOZ-waarde langer dan een jaar zien."
             pdataanc="In ontwikkeling"
             pnum1="301"
             main2img1={haticon1}
@@ -49,7 +49,7 @@ const ProposSearchContent = () => {
             main2img2={haticon2}
             />
         </div>
-        <div className="contentmaindata">
+        <div className="contentmaindata anccolor1">
             <SearchContentData
             pdatahead="Idee"
             pdatapara="Ik wil ook in België kunnen zoeken."
@@ -63,7 +63,7 @@ const ProposSearchContent = () => {
         <h3>
             Alle ideeën
         </h3>
-        <div className="contentmaindata">
+        <div className="contentmaindata anccolor2">
             <SearchContentData
             pdatahead="Idee"
             pdatapara="Ik wil graag een profielfoto uploaden. "
@@ -74,7 +74,7 @@ const ProposSearchContent = () => {
             main2img2={haticon2}
             />
         </div>
-        <div className="contentmaindata">
+        <div className="contentmaindata anccolor2">
             <SearchContentData
             pdatahead="Idee"
             pdatapara="Ik wil de kleuren van de cijfers veranderen."

@@ -7,7 +7,6 @@ const ProposSearch = () => {
         <div className="container">
             <div className="searchdata">
                 <ProposSearchContent/>
-
             </div>
         </div>
     </div>

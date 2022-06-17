@@ -1,0 +1,50 @@
+.profiledropdown img{
+    border-radius: 50%;
+    width: 27px;
+}
+.profiledropdown img:nth-of-type(2){
+    width: 13px;
+    margin-left: 8px;
+}
+.reportHeadsec li {
+    margin: 15px 4px;
+}
+.report-list-btn li a{
+    color: #1E87F0;
+    font-size: 20px;
+    font-family: "giloryBold";
+    background-color: #EEF2FC;
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.report-list-btn li a:hover{
+    color: #fff;
+    background-color: #231F20;
+}
+@media screen and (max-width:768px) {
+    .reportHeadsec{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 0;
+        background-color: #f0f0f0;
+        transition: 0.3s ease-in-out;
+        z-index: 10;
+        padding-left:15px;
+    }
+    .report-list-btn{
+        width: 30%;
+    }
+    .report-menu{
+        position: absolute !important;
+    }
+    .reportdataheight{
+        height: 89vh;
+    }
+}
+@media screen and (max-width:576px) {
+    .report-list-btn{
+        width: 72%;
+    }
+}

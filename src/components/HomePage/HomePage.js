@@ -8,11 +8,13 @@ import HomeStarter from "./HomeStarter/HomeStarter";
 import HomeWrapper from "./HomeWrapper/HomeWrapper";
 import KunnenMain from "./Kunnen/KunnenMain";
 import ReviewsMain from "./Reviews/ReviewsMain";
+import Search from "../Verfication/Search";
 const HomePage = () =>{
     return(
         <div>
             <HomeHeader />
             <HomeWrapper />
+            <Search/>
             <HomeStarter />
             <HomeManagerCards />
             <KunnenMain />

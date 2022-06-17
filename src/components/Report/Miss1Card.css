@@ -1,0 +1,40 @@
+.miss1cardmain{
+    display: flex;
+}
+.miss1cardimg{
+    height: 48px;
+    width: 48px;
+    background-color: #52EBAB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 8px 8px 0;
+}
+.miss1cardimg img{
+    width: 21px;
+}
+.miss1cardmain h5{
+    font-size: 25px;
+    color: #231F20;
+    font-family: "giloryMedium";
+    margin: auto 0;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .miss1cardimg{
+        height: 40px;
+        width: 40px;
+    }
+    .miss1cardmain h5{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .miss1cardimg{
+        height: 40px;
+        width: 40px;
+    }
+    .miss1cardmain h5{
+        font-size: 20px;
+    }
+}

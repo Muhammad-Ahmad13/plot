@@ -21,7 +21,6 @@ const PricingMian = () => {
         </div>
         </div>
         <WalterDirection/>
-    
         <HomeFooter/>
     </div>
   );

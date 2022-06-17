@@ -19,7 +19,7 @@ const HomeHeader = () =>{
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav home-data">
                     <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" to ="#">Kopen met Plotcore</Link>
+                        <Link className="nav-link" aria-current="page" to ="/demo">Kopen met Plotcore</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to ="/proposal">Zelf berekenen</Link>

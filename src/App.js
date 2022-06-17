@@ -2,15 +2,18 @@
 import {Route,Routes} from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import ChangePassword from './components/Navigationpages/ChangePassword';
-import Forgot from './components/Navigationpages/Forgot';
+// import Forgot from './components/Navigationpages/Forgot';
 import ModalSignLog from './components/Navigationpages/ModalSignLog';
 import SignUP from './components/Navigationpages/SignUP';
-import Starter from './components/Starter';
+// import Starter from './components/Starter';
 import ForStarter from './components/ForStarter/ForStarter';
 import ContactUs from './components/ContactUs/ContactUs';
 import RentalMain from './components/RentalPage/RentalMain';
 import ProposalMain from './components/Proposal/ProposalMain';
 import PricingMian from './components/Pricing/PricingMian';
+import TabsMain from './components/AccountTabs/TabsMain';
+import ReportMain from './components/Report/ReportMain';
+import Search from './components/Verfication/Search';
 function App() {
   return (
     <div className="App">
@@ -26,7 +29,11 @@ function App() {
         <Route exact path='/rental' element = {<RentalMain/>}></Route>
         <Route exact path='/proposal' element = {<ProposalMain/>}></Route>
         <Route exact path='/pricing' element = {<PricingMian/>}></Route>
-      </Routes>
+        <Route exact path='/demo' element = {<TabsMain/>}></Route>
+        {/* <Route exact path='/report' element = {<ReportMain/>}></Route> */}
+        <Route exact path='/verify' element = {<Search/>}></Route>
+        <Route path={"/detail/:locat"} element = {<ReportMain/>}></Route>
+      </Routes> 
     </div>
   );
 }

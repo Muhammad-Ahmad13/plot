@@ -5,6 +5,7 @@ import ComingDevelop from './ComingDevelop';
 import HomeFinder from './HomeFinder';
 import RentalHeader from './RentalHeader';
 import RentalSteps from './RentalSteps';
+import RentPackage from './RentPackage';
 import TimeMain from './TimeMain';
 
 const RentalMain = () => {
@@ -15,6 +16,7 @@ const RentalMain = () => {
         <HomeFinder/>
         <RentalSteps/>
         <TimeMain/>
+        <RentPackage/>
         <ComingDevelop/>
         <HomeFooter/>
     </div>

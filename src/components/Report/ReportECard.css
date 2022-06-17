@@ -1,0 +1,56 @@
+.Ecardmain{
+    background-color: #FFFFFF;
+    padding: 15px 10px 15px 25px;
+    border-radius: 10px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.Ecardmain h4{
+    color: #231F20;
+    font-size: 35px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.Ecardmain p{
+    color: #353535;
+    font-size: 22px;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding: 15px 0;
+}
+.Eanc{
+    margin: auto 0 15px 0;
+}
+.Eanc a{
+    background-color: #1E87F0;
+    font-size: 22px;
+    color: #fff;
+    font-family: "giloryBold";
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+.Eanc a:hover{
+    color: #fff;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .Ecardmain h4{
+        font-size: 32px;
+    }
+    .Ecardmain p{
+        font-size: 19px;
+    }
+}
+@media screen  and (max-width:768px){
+    .Ecardmain h4{
+        font-size: 24px;
+    }
+    .Ecardmain p{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .Eanc a{
+        font-size: 18px; 
+        padding: 12px 15px;
+    }
+}

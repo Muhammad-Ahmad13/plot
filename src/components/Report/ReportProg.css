@@ -1,0 +1,116 @@
+.reportprogmain{
+    background-color: #EEF2FC;
+    padding: 25px 15px;
+    border-radius: 10px;
+    margin: 60px 0 30px 0;
+}
+.reportprogsec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tablistcontent{
+    width: 15%; 
+}
+.reportProgdata{
+    width: 75%;
+} 
+.tablistcontent ul{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding:3px 8px;
+}
+.tablistcontent ul li {
+    display: inline-block;
+}
+.tablistcontent ul li .active{
+    border-radius: 25px;
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+.tablistcontent ul li button{
+    color: #231F20;
+    font-size: 22px;
+    font-family: "giloryBold";
+    border-radius: 30px;
+}
+.tablistcontent ul li button:hover{
+    color: #231F20;
+}
+.reportProgdata h3{
+    font-size: 35px;
+    color: #231F20;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.reportProgdata p span{
+    font-size: 22px;
+    color: #353535;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding: 8px 0;
+    margin:0 3px;
+}
+.tabSection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #CACACA;
+}
+.progcontent1,.progcontent2,.progcontent3,.progcontent4{
+    width: 48%;
+    margin: 15px 0;
+}
+.progcontent1 .progress,.progcontent2 .progress,.progcontent3 .progress,.progcontent4 .progress{
+   height: 12px;
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .tablistcontent{
+        width: 21%; 
+    }
+    .reportProgdata p span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .reportprogsec{
+        /* display: unset !important;
+        justify-content: unset; */
+        flex-direction: column;
+    }
+    .reportProgdata{
+        width: 100%;
+    }
+    .tablistcontent{
+        width: 26%;
+        margin: 0 auto;
+    }
+    .reportProgdata h3{
+        font-size: 30px;
+    }
+    .tablistcontent ul li button{
+        font-size: 18px;
+    }
+    .reportProgdata p span{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:576px) {
+    .tablistcontent{
+        width: 63%;
+        margin: 0 auto;
+    }
+    .reportProgdata h3{
+        font-size: 26px;
+    }
+    .tablistcontent ul{
+        padding:15px 8px;
+    }
+    .reportProgdata p span{
+        font-size: 16px;
+    }
+    .progcontent1,.progcontent2,.progcontent3,.progcontent4{
+        width: 95%;
+        margin: 15px auto;
+    }
+}

@@ -1,0 +1,38 @@
+/* .MuiTablePagination-actions button{
+    background-color: #1E87F0;
+    color: #fff;
+} */
+.tablemain{
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.15);
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    margin: 50px 0;
+}
+.tabSelect select{
+    background-color: #F8FAFF;
+    border: 1.3px solid #EFEFF4 !important;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 0 0 15px  0;
+}
+.tabImage img{
+    max-width: 44px;
+}
+.tabImage span{
+    color: #231F20;
+    font-size: 28px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.tablecontent{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:768px){
+    .tabImage span{
+        font-size: 20px;
+    }
+}

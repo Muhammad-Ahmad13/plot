@@ -1,0 +1,56 @@
+.reportsparmain{
+    background-color: #1E87F0;
+}
+.reportsparhead{
+    
+    padding: 50px 0 200px 0;
+}
+.reportsparsec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -130px;
+}
+.reportsparcontent{
+    width: 24%;
+}
+.reportsparhead h3{
+    color: #fff ;
+}
+.reportsparhead p{
+    color: #fff ;
+}
+.reportsparheadanc{
+    text-align: center;
+    margin: 20px 0;
+}
+.reportsparheadanc a:nth-of-type(1){
+    color: #1E87F0;
+    background-color: #fff;
+    font-size: 22px;
+    font-family: "giloryBold";
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.reportsparheadanc a:nth-of-type(2){
+    color: #fff;
+    background-color: #231F20;
+    font-size: 22px;
+    font-family: "giloryBold";
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+@media screen and (max-width:576px){
+    .reportsparcontent{
+        width: 90%;
+        margin: 0 auto 25px auto;
+    }
+    .reportsparheadanc a{
+        display: block;
+        margin: 10px;
+    }
+    .reportsparheadanc a:nth-of-type(1),.reportsparheadanc a:nth-of-type(2){
+        font-size: 18px;
+    }
+}
