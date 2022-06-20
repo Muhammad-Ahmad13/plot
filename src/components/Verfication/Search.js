@@ -10,9 +10,6 @@ const Search = () => {
   const [url , setUrl] = useState(" ");
   const [isActive, setIsActive] = useState(false);
   var [upData, setUpData] = useState([]);
-  // const [dataLoad, setDataLoad] = useState(false);
-  // const [isDisable , setIsDisabled] = useState(true);
-
   // let dataInput = "";
   // const InputEvent = (event) => {
   //   // dataInput = event.target.value;
@@ -22,7 +19,7 @@ const Search = () => {
     const getAnswer = async () => {
       if (posts !=='')
       {
-        const response  = await axios.get("http://34.90.29.163:90/reterive_data/?query="+ posts);
+        const response  = await axios.get("https://34.90.29.163:90/reterive_data/?query="+ posts);
         setUpData(response.data);
         setSData(response.data);
     }
@@ -47,8 +44,6 @@ const Search = () => {
       // setIsActive(true);
     }
   }
-// console.log(updateData);
- 
   // const submitHandle = () => {
   //  if (url != " "){
   //   setBtn(true)
@@ -63,20 +58,15 @@ const Search = () => {
   // }).catch(errp=>{
   //     console.log(errp)
   // })
-
   // }
- 
   // const [loading, setLoading] = useState(false);
   // const [searchTitle, setSearchTitle] = useState("");
-
 //   useEffect(() =>{
 //     const loadPosts = async () =>{
 //       setLoading(true);
 //       const response = await axios.get("http://127.0.0.1:8000/reterive_data/?query="+ setPosts);
 //       setPosts(response.data);
 //       setLoading(true);
-
-
 //     }
 //     loadPosts();
 // //     axios.get("http://127.0.0.1:8000/reterive_data/?query="+setDataGet).then(res=>{
@@ -89,7 +79,6 @@ const Search = () => {
 //     // return() =>{
 //     // }
 // },[]);
-  // console.log(datacollect)
   return (
     <div className="container">
       <div className='verifymain'>

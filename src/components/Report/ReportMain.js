@@ -36,7 +36,7 @@ const ReportMain = () => {
   const [lmFive, setLmFive] = useState("");
   const [lmTen, setLmTen] = useState("");
   const getClient = async () => {
-    const response  = await axios.get("http://34.90.29.163:90/reterive_data/details/?query="+ windowLoc);
+    const response  = await axios.get("https://34.90.29.163:90/reterive_data/details/?query="+ windowLoc);
     setClient(response.data.details.name);
     setDescription(response.data.details.description);
     setPrice(response.data.total_price);

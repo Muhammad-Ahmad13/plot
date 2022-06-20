@@ -2,6 +2,12 @@
     background-color: #EDF1FB;
     padding: 75px 20px 50px 20px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.packagecardmain:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    background-color: #1E87F0;
 }
 .packagecardmain h3{
     color: #0E0D0D;
@@ -68,6 +74,35 @@
     border-radius: 8px;
     font-size: 22px;
     font-family: "giloryBold"; 
+}
+.packageCardanc a:hover{
+    color: #fff;
+    background-color: #231F20;
+}
+.packagecardmain:hover h3{
+    color: #fff;
+}
+.packagecardmain:hover p{
+    color: #fff;
+}
+.packagecardmain:hover h4{
+    color: #fff;
+}
+.packagecardmain:hover ul li span{
+    background-color: #0E0D0D;
+}
+.packagecardmain:hover a{
+    color: #fff;
+    background-color: #0E0D0D;
+}
+.packagecardmain:hover li{
+    color: #fff;
+}
+.packagecardmain:hover label{
+    color: #fff;
+}
+.packagecardmain:hover span{
+    color: #fff;
 }
 @media screen and (min-width:992px) and (max-width:1024px) {
     .packagecardmain{
