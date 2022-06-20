@@ -24,6 +24,9 @@
     padding: 15px 18px;
     border-radius: 10px;
 }
+.cominganc a:hover{
+    color: #FFFFFF;
+}
 .comingimage1 img{
     max-width: 200px;
 }

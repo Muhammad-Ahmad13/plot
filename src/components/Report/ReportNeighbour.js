@@ -21,7 +21,7 @@ export default function ReportNeighbour() {
   const [neighbourName, setNeighbourName]= useState([]);
   const [avail, setAvail] = useState(false);
   const getNeighbour = async () => {
-    const resp  = await axios.get("http://34.90.29.163:90/reterive_data/neighbours/?query="+ windowLoc1);
+    const resp  = await axios.get("https://34.90.29.163:90/reterive_data/neighbours/?query="+ windowLoc1);
     setNeighbourName(resp.data);
     setAvail(true);
   };
