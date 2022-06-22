@@ -11,19 +11,19 @@ const ReportHWrap = () => {
                 <div className="Hwrapcontent1">
                     <ul>
                         <li>
-                            <Link to="#">Alles</Link>
+                            <Link to ="/demo">Kopen met Plotcore</Link>
                         </li>
                         <li>
-                            <Link to="#">Woningwaarde</Link>
+                            <Link to ="/proposal">Zelf berekenen</Link>
                         </li>
                         <li>
-                            <Link to="#"> Vergelijk</Link>
+                            <Link to ="/rental">Hoe het werkt</Link>
                         </li>
                         <li>
-                            <Link to="#">Bieden</Link>
+                            <Link to ="/pricing">Prijzen</Link>
                         </li>
                         <li>
-                            <Link to="#">Woningmarkt</Link>
+                            <Link to ="/forstarter">Starter</Link>
                         </li>
                     </ul>
                 </div>

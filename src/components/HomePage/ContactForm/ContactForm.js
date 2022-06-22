@@ -8,10 +8,6 @@ const ContactForm = () =>{
 
     const handleContactForm = (e) =>{
         e.preventDefault();
-        console.log(conName)
-        console.log(conMail)
-        console.log(conPhone)
-        console.log(conText)
         setConMail('')
         setConName('')
         setConPhone('')

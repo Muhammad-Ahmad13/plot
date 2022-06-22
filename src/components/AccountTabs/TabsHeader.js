@@ -4,11 +4,12 @@ import tablogo from "../../assets/images/logo-blue.jpg";
 import profimg from "../../assets/images/profileimg.png"; 
 import dropIcon from "../../assets/images/proposhat.png";
 import ProfileData from './ProfileData';
+import { Link } from 'react-router-dom';
 const TabsHeader = () => {
   return (
     <div className="tabheadermain">
         <div className="tabheaderlogo">
-            <img src={tablogo} alt="logo-img"/>
+          <Link to="/"><img src={tablogo} alt="logo-img"/></Link>
         </div>
         <div className="tabprofile">
             <ProfileData

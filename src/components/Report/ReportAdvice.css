@@ -15,7 +15,7 @@
 }
 .advicemain h5{
     color: #000000;
-    font-size: 35px;
+    font-size: 32px;
     font-family: "giloryBold";
     margin: 0;
 }
@@ -35,4 +35,16 @@
 }
 .adviceimage img:nth-of-type(3){
     margin-left: -30px;
+}
+@media screen and (max-width:600px){
+    .advicemain h5 {
+        font-size: 23px;
+    }
+    .advicemain p {
+        font-size: 18px;
+    }
+    .adviceanc a{
+        font-size: 15px;
+        padding: 12px 12px;
+    }
 }

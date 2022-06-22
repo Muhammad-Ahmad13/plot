@@ -1,7 +1,6 @@
 import React from 'react';
 import "./ReportECard.css";
 import { Link } from 'react-router-dom';
-
 const ReportECard = (props) => {
   return (
     <div className="Ecardmain">

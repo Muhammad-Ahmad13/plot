@@ -80,10 +80,10 @@ const ReportMain = () => {
         wrapdescrip ="Ontdek alles wat je wilt weten over dit huis. Extra paar ogen nodig? Deel dit rapport met familie, vrienden of bespreek het met een aankoopexpert van Walter Alles-in-1."/>
         <ReportProg
         propertyName={client + ", " + locat}
-        pApart = {apart +" ·"}
-        pYear = {year +" ·"}
-        pRoom = {bed +" Kamers ·"}
-        pArea = {meter +" ·"}               
+        pApart = {apart +"· "}
+        pYear = {year +"· "}
+        pRoom = {bed +" Kamers· "}
+        pArea = {meter +"· "}               
         pColor = ""
         pLocation = ""
         pdataloc = {scrap}

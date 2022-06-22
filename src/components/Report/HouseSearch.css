@@ -27,3 +27,11 @@
     width: 100%;
     outline: none;
 }
+@media screen and (max-width:576px) {
+    .hsearchmain input{
+      margin-bottom: 25px;
+    }
+    .hsearchmain a{
+        position: unset;
+    }
+}

@@ -88,7 +88,7 @@ const Tabingpass = () => {
                         {formik.errors.password ? <div className="passerror">{formik.errors.password}</div> : null}
                     </div>
                     <div className="tpass-input tpass-width1 tpass-abs">
-                        <label htmlFor="Confirm Password">Confirm Your New Password</label>
+                        <label htmlFor="Confirm Password">Confirm New Password</label>
                         <input
                             id="confirmPassword"
                             name="confirmPassword"

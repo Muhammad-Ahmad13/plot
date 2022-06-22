@@ -13,7 +13,7 @@
     max-width: 658px;
     margin: 0 auto;
 }
-@media screen and (max-width:1024px){
+@media screen and (min-width:992px) and (max-width:1024px){
     .kunnen-sec h4{
         font-size: 48px;
     }
@@ -31,7 +31,7 @@
 }
 @media screen and (max-width:576px){
     .kunnen-sec h4{
-        font-size: 24px;
+        font-size: 22px;
     }
     .kunnen-sec p{
         font-size: 15px;

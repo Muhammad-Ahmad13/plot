@@ -10,13 +10,13 @@
     flex-direction: column;
 }
 .factcardmain span{
-    font-size: 50px;
+    font-size: 42px;
     color: #1E87F0;
     font-family: "giloryBold";
     margin: 0;
 }
 .factcardmain h3{
-    font-size: 22px;
+    font-size: 20px;
     color: #231F20;
     font-family: "giloryBold";
     margin: 0;
@@ -30,7 +30,7 @@
 }
 @media screen and (min-width:992px) and (max-width:1024px){
     .factcardmain span{
-        font-size: 40px;
+        font-size: 32px;
     }
     .factcardmain{
         min-height: 280px;
@@ -47,7 +47,7 @@
         font-size: 30px;
     }
     .factcardmain{
-        min-height: 280px;
+        min-height: 240px;
     }
     .factcardmain h3{
         font-size: 16px;

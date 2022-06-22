@@ -18,7 +18,7 @@
     background-size: 90%;
 }
 .findercontent2 img{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 .findercontent1 h3{
    margin: 0;
@@ -38,16 +38,16 @@
     .findercontent2{
         background-size: 100%;
     }
-    .findercontent2 img{
-        margin-top: 220px;
-    }
+    .findercontent1 p{
+        font-size: 18px;
+     }
 }
 @media screen and (max-width:768px) {
     .findercontent2{
-        background-size: 100% 80%;
+        background-size: 100% 100%;
     }
     .findercontent2 img{
-        margin-top: 100px;
+        margin-top: 30px;
     }
     .findersec{
         flex-direction: column;
@@ -56,8 +56,12 @@
         width: 100%;
     }
     .findercontent2{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
+    .findercontent1 p{
+        font-size: 18px;
+     }
 }
 @media screen and (max-width:576px) {
     .findermain{
@@ -66,11 +70,11 @@
     .findercontent1 h3{
         font-size: 22px; 
         padding: 0 0 15px 0;
-     }
-     .findercontent1 p{
-        font-size: 18px;
-     }
-     .findercontent2 img{
-        margin-top: 50px;
+    }
+    .findercontent1 p{
+        font-size: 16px;
+    }
+    .findercontent2 img{
+        margin-top: 30px;
     }
 }

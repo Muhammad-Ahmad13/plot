@@ -1,5 +1,4 @@
 import React from "react";
-// import improveImg from "../../assets/images/improve-img.png";
 import "./ImprovementMain.css";
 const ImprovementMain = () =>{
     return(
@@ -18,10 +17,6 @@ const ImprovementMain = () =>{
                             <a href="#">Direct starten huurmarkt</a>
                         </div>
                     </div>
-                    {/* <div className="improve-content2">
-                        <img src={improveImg} alt="improve-img">
-                        </img>
-                    </div> */}
                 </div>
             </div>
         </div>
