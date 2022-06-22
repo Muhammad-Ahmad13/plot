@@ -79,9 +79,6 @@ const Login = () =>{
                                     onChange={(e) => setLoginMail(e.target.value)} 
                                     required
                                 />
-                                {/* <div className="mail-image">
-                                    <img src={mailicon} alt="mail-icon"/>
-                                </div> */}
                             </div>
                             <div className="sign-input sign-abs">
                                 <label>Password</label>
@@ -94,9 +91,6 @@ const Login = () =>{
                                     value={passwordLogin}
                                     required
                                 />
-                                 {/* <div className="mail-image">
-                                    <img src={lockicon} alt="mail-icon"/>
-                                </div> */}
                                 <span onClick={handleEye}>
                                 {eyeShow ?
                                 <div className="passeye">
@@ -121,7 +115,7 @@ const Login = () =>{
                     </div>
                     :
                     <div className="sign-data" id="sign-forgot">
-                        <div class="card card-body">
+                        <div className="card card-body">
                             <Forgot />
                         </div>
                     </div> 

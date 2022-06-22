@@ -1,7 +1,4 @@
 .faqAccordionMain{
-    /* background-color: transparent; */
-    /* border: none !important;
-    outline: none !important; */
     width: 80%;
     margin: 0 auto;
 }
@@ -33,6 +30,9 @@
     } 
 }
 @media screen and (max-width:576px) {
+    .faqmain h1{
+        font-size: 32px;
+    }
     .faqAccordionMain{
         width: 95%;
         margin: 0 auto;

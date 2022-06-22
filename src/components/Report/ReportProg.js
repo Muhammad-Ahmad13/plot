@@ -33,8 +33,8 @@ const ReportProg = (props) => {
               </ul>
             </div>
         </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active " id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
+        <div className="tab-content" id="pills-tabContent">
+            <div className="tab-pane fade show active " id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
               <div className="tabSection">
             <div className="progcontent1">
                 <div className="progresscontent">
@@ -52,7 +52,6 @@ const ReportProg = (props) => {
                       progname={props.name2}
                       progvalue={props.value2}
                       progStyle2={props.style2}
-
                     />
                   </div>
                 </div>
@@ -65,7 +64,6 @@ const ReportProg = (props) => {
                     />
                     </div>
                 </div>
-
                 <div className="progcontent4">
                   <div className="progresscontent">
                     <ProgressCard
@@ -77,7 +75,7 @@ const ReportProg = (props) => {
                 </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-pricem" role="tabpanel" aria-labelledby="pills-pricem-tab">
+            <div className="tab-pane fade" id="pills-pricem" role="tabpanel" aria-labelledby="pills-pricem-tab">
               <div className='tabSection'>
             <div className="progcontent1">           
                 <div className="progresscontent">
@@ -88,7 +86,6 @@ const ReportProg = (props) => {
                     />
                     </div>
                 </div>
-
                 <div className="progcontent2">
                   <div className="progresscontent">
                     <ProgressCard
@@ -98,7 +95,6 @@ const ReportProg = (props) => {
                     /> 
                     </div>
                 </div>
-
                 <div className="progcontent3">
                   <div className="progresscontent">
                     <ProgressCard
@@ -108,7 +104,6 @@ const ReportProg = (props) => {
                     />
                   </div>
                 </div>
-
                 <div className="progcontent4">
                     <div className="progresscontent">
                       <ProgressCard
@@ -121,11 +116,9 @@ const ReportProg = (props) => {
                 </div>
             </div>
         </div>
-
         <div className="reportadvice">
           <ReportAdvice/>
         </div>
-
         </div>
     </div>
     </>

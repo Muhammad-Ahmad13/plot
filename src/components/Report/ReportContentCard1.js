@@ -30,5 +30,4 @@ const ReportContentCard1 = () => {
     </div>
   );
 }
-
 export default ReportContentCard1;

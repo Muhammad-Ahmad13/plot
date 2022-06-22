@@ -19,7 +19,7 @@ const HomeHeader = () =>{
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav home-data">
                     <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" to ="/demo">Kopen met Plotcore</Link>
+                        <Link className="nav-link" aria-current="page" to ="/contactus">Kopen met Plotcore</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to ="/proposal">Zelf berekenen</Link>
@@ -28,14 +28,14 @@ const HomeHeader = () =>{
                         <Link className="nav-link" to ="/rental">Hoe het werkt</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to ="/contactus">Prijzen</Link>
+                        <Link className="nav-link" to ="/pricing">Prijzen</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to ="/forstarter">Starter</Link>
                     </li>
                     <div className="home-list-btn">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/login">Gratis infomatiegesprek</Link>
+                        <Link className="nav-link" to="/login">Login/Aanmelden</Link>
                             {/* <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link> */}
                         </li>
                     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./WalterComp.css";
-
 const WalterComp = (props) =>{
   return (
     <div className="waltercomp text-center">

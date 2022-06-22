@@ -12,7 +12,7 @@ const ProfileData = (props) => {
                     <img src={props.profIcon} alt = "contentimage"/>
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><Link className="dropdown-item" to ="#">Profile</Link></li>
+                    <li><Link className="dropdown-item" to ="/profile">Profile</Link></li>
                     <li><Link className="dropdown-item" to ="#">Refernces</Link></li>
                     <li><Link className="dropdown-item" to ="#">Sign Out</Link></li>
                 </ul>

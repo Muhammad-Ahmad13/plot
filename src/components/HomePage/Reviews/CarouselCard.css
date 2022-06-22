@@ -2,7 +2,7 @@
     background-color: #EEF2FC;
     border-radius: 13px;
     padding: 30px 30px 15px 30px;
-    min-height: 320px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
 }
@@ -38,5 +38,7 @@
     .carous-card-main{
         padding: 20px 8px 15px 15px;
     }
-    
+    .carous-card-main p{
+        font-size: 18px;
+    }
 }

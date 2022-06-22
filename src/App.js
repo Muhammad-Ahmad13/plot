@@ -29,7 +29,7 @@ function App() {
         <Route exact path='/rental' element = {<RentalMain/>}></Route>
         <Route exact path='/proposal' element = {<ProposalMain/>}></Route>
         <Route exact path='/pricing' element = {<PricingMian/>}></Route>
-        <Route exact path='/demo' element = {<TabsMain/>}></Route>
+        <Route exact path='/profile' element = {<TabsMain/>}></Route>
         {/* <Route exact path='/report' element = {<ReportMain/>}></Route> */}
         <Route exact path='/verify' element = {<Search/>}></Route>
         <Route path={"/detail/:locat"} element = {<ReportMain/>}></Route>

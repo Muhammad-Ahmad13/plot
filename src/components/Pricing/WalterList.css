@@ -6,17 +6,24 @@ ul, li {
     width: 17px;
     margin-right: 10px;
 }
-.waltercomplist ul li span{
-    font-size: 22px;
+.waltercomplist ul li{
+    font-size: 18px;
     font-family: "giloryMedium";
     color: #0E0D0D;
 }
 @media screen and (min-width:992px) and (max-width:1024px){
     .waltercomplist ul li span img{
-      
         margin-right: 7px;
     }
-    .waltercomplist ul li span{
-        font-size: 18px;
+    .waltercomplist ul li{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:768px) {
+    .waltercomplist ul li span img{
+        margin-right: 7px;
+    }
+    .waltercomplist ul li{
+        font-size: 15px;
     }
 }

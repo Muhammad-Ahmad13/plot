@@ -1,8 +1,7 @@
 .contact-main{
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../../assets/images/form-bg.png");
-    /* background-image:; */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     padding: 100px 0;
     margin-bottom: 50px;
 }
@@ -24,12 +23,12 @@
 }
 .contact-content1 h4{
     color: #fff;
-    font-size: 60px;
+    font-size: 54px;
     font-family: "giloryBold";
 }
 .contact-content1 p{
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "giloryMedium";
 }
 .contact-anc{
@@ -77,12 +76,12 @@
     font-family: "giloryMedium";
     font-size: 22px;
  }
- @media screen and (max-width:1024px){
+ @media screen and (min-width:992px) and (max-width:1024px){
     .contact-content1 h4{
-        font-size: 48px;
+        font-size: 40px;
     }
     .contact-content1 p{
-        font-size: 18px;
+        font-size: 17px;
     }
     .contact-anc button{
         font-size: 18px;
@@ -108,9 +107,16 @@
         padding: 50px 0;
     }
     .contact-content1 h4{
-        font-size: 24px;
+        font-size: 23px;
     }
     .contact-content1 p{
         font-size: 16px;
+    }
+    .contact-anc button{
+        font-size: 16px;
+        font-family: "giloryBold";
+        border-radius: 10px;
+        padding: 15px 20px;
+        border: none;
     }
 }

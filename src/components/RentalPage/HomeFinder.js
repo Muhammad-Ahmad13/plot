@@ -1,7 +1,6 @@
 import React from 'react';
 import "./HomeFinder.css";
 import finder1 from "../../assets/images/finder1.png";
-
 const HomeFinder = () => {
   return (
     <div className="findermain">

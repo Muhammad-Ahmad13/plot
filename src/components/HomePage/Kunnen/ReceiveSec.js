@@ -11,7 +11,7 @@ const ReceiveSec=()=>{
             <div className="receive-content2">
                 <AccessContent
                 textFirst="Lörem ipsum trir bedade"
-                textHeading="Voor starters, ontvang je eigen data gedreven assistent."
+                textHeading="Ben jij een starter? Ontvang je eigen data gedreven assistent!"
                 textPara="
                 Laat technologie jou helpen bij het vinden van een woning. In de woningmarkt draait het onder andere om op
                 tijd te zijn bij nieuwe woningen die op de woningmarkt verschijnen. Wij hebben hiervoor de juiste oplossing

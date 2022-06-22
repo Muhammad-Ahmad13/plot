@@ -36,7 +36,7 @@
     border-radius: 10px;
     padding: 20px 35px;
 }
-@media screen and (max-width:1024px){
+@media screen and (min-width:992px) and (max-width:1024px){
     .improve-content1 h3{
         font-size: 48px;
     }
@@ -76,7 +76,7 @@
         padding: 50px 0;
     }
     .improve-content1 h3{
-        font-size: 30px;
+        font-size: 26px;
     }
     .improve-content1 p{
         font-size: 16px;

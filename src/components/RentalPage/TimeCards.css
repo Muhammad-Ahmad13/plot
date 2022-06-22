@@ -16,7 +16,7 @@
     margin: 0 auto;
 }
 .timecardmain p{
-    font-size: 30px;
+    font-size: 28px;
     font-family: "giloryBold";
     color: #122256;
     margin: 0;
@@ -29,6 +29,6 @@
 }
 @media screen and (max-width:768px){
     .timecardmain p{
-        font-size: 20px; 
+        font-size: 18px; 
     }
 }

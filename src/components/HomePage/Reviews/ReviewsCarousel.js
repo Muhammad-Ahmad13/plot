@@ -3,13 +3,9 @@ import CarouselCard from "./CarouselCard";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css"
 import "owl.carousel/dist/assets/owl.theme.default.min.css"
-// import carous1 from "../../../assets/images/carous-1.png";
-// import carous2 from "../../../assets/images/carous-2.png";
-// import carous3 from "../../../assets/images/carous-3.png";
 import carous1 from "../../../assets/images/test1.jpg";
 import carous2 from "../../../assets/images/test2.jpg";
 import carous3 from "../../../assets/images/test3.jpg";
-
 import "./ReviewsCarousel.css";
 const options1 ={
     responsiveClass: true,

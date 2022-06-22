@@ -30,7 +30,7 @@ const ReportHeader = () => {
                             <img src={dropIcon1} alt = "contentimage"/>
                           </a>
                           <ul className="dropdown-menu report-menu" aria-labelledby="dropdownMenuLink">
-                              <li><Link className="dropdown-item" to ="#">Profile</Link></li>
+                              <li><Link className="dropdown-item" to ="profile">Profile</Link></li>
                               <li><Link className="dropdown-item" to ="#">Refernces</Link></li>
                               <li><Link className="dropdown-item" to ="#">Sign Out</Link></li>
                           </ul>

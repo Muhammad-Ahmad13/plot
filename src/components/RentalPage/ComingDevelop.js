@@ -17,18 +17,15 @@ const ComingDevelop = () => {
                 </div>
                 <div className='comingimage1 developabs1'>
                     <img src={develop1} alt = "imagedevelop"/>
-
                 </div>
                 <div className='comingimage2 developabs2'>
                     <img src={develop2} alt = "imagedevelop"/>
                 </div>
                 <div className='comingimage2 developabs3'>
                     <img src={develop3} alt = "imagedevelop"/>
-
                 </div>
             </div>
         </div>
-
     </div>
   )
 }

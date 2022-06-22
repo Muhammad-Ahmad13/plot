@@ -5,7 +5,7 @@
 }
 .content-sec h5{
     color: #231F20;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "giloryBold";
 }
 .content-sec p{
@@ -26,7 +26,7 @@
     border-radius: 10px;
     padding: 20px 38px;
 }
-@media screen and (max-width:1024px){
+@media screen and (min-width:992px) and (max-width:1024px){
     .content-sec h5{
         font-size: 40px;
     }
@@ -54,7 +54,7 @@
 }
 @media screen and (max-width:576px){
     .content-sec h5{
-        font-size: 32px;
+        font-size: 26px;
     }
     .content-sec p{
         font-size: 16px;
