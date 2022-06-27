@@ -46,5 +46,4 @@ const ReportFacts = () => {
     </div>
   );
 }
-
 export default ReportFacts;

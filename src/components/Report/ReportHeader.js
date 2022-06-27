@@ -4,7 +4,7 @@ import icon from "../../assets/images/burger-icon-icon-removebg-preview.png";
 import logo1 from "../../assets/images/logo-image.png";
 import ProfileData from '../AccountTabs/ProfileData';
 import TabsHeader from '../AccountTabs/TabsHeader';
-import profimg1 from "../../assets/images/profileimg.png"; 
+import profimg1 from "../../assets/images/profileimg1.png"; 
 import dropIcon1 from "../../assets/images/proposhat.png";
 import headflag from "../../assets/images/headflag.png";
 import "./ReportHeader.css";
@@ -38,11 +38,11 @@ const ReportHeader = () => {
                       </li>
                       <div className="report-list-btn">
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">Ga naar dashboard</Link>
+                            <Link className="nav-link" to="/profile">Ga naar dashboard</Link>
                         </li>
                       </div>
                       <li className="nav-item mt-4">
-                          <Link className="nav-link" to ="#">Neem contact op</Link>
+                          <Link className="nav-link" to ="/contactus">Neem contact op</Link>
                       </li>
                       <li className="nav-item">
                         <div className="tabprofiledata">

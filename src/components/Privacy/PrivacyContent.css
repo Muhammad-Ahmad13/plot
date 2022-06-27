@@ -1,0 +1,53 @@
+.pheadPara{
+    padding: 10px 0;
+}
+.privacypara p{
+    color: #353535;
+    font-size: 20px;
+    font-family: "giloryMedium";
+    margin: 0;
+}
+.privacypara h4{
+    color: #231F20;
+    font-size: 30px;
+    font-family: "giloryBold";
+    margin: 0;
+}
+.privacylist ul {
+    list-style-type:disc;
+    padding: 5px 0 5px 15px;
+    margin-left: 30px;
+}
+.privacylist ul li{
+    padding: 5px 0 5px 0px;
+    color: #353535;
+    font-size: 18px;
+    font-family: "giloryMedium";
+    margin: 0;
+}
+.pheadfoot span, .pheadfoot a{
+    display: block;
+    padding: 0 0 5px 0;
+    color: #353535;
+    font-size: 20px;
+}
+.pheadfoot a:hover{
+   color:#353535;
+}
+@media screen and (max-width:600px){
+    .privacypara p{
+        font-size: 16px;
+    }
+    .privacypara h4{
+        font-size: 24px;
+    }
+    .pheadfoot span, .pheadfoot a{
+        font-size: 16px;
+    }
+    .privacylist ul {
+        margin-left: 10px;
+    }
+    .privacylist ul li{
+        font-size: 16px;
+    }
+}

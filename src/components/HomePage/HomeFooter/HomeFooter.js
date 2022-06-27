@@ -30,12 +30,19 @@ const HomeFooter = () =>{
                                 <Link to="#"><img src={footIcon4} alt="foot-icon"/></Link>
                                 </li>
                             </ul>
+                            <div className="foot-contactdata">
+                                <a href="tel:+31 6 40848267">+31 6 40848267</a>
+                                <div>
+                                <a href="mailto:max.mustermann@example.com">info@plotcore.com</a>
+                                </div>
+                            </div>
+                            <span></span>
                         </div>
                         <div className="hfoot-content2">
                             <h5>Huis kopen met Plotcore Living</h5>
                             <ul>
                                 <li>
-                                <Link to="#">Hoe het werkt</Link>
+                                <Link to="/rental">Verhuur</Link>
                                 </li>
                                 <li>
                                 <Link to="#">Plotcore Alles-in-1</Link>
@@ -47,7 +54,7 @@ const HomeFooter = () =>{
                                 <Link to="#">Plotcore webinar</Link>
                                 </li>
                                 <li>
-                                <Link to="#">Prijzen</Link>
+                                <Link to="/pricing">Prijzen</Link>
                                 </li>
                                 <li>
                                 <Link to="#">For Expats</Link>
@@ -63,7 +70,7 @@ const HomeFooter = () =>{
                                         <Link to="#">Wie is Plotcore</Link>
                                         </li>
                                         <li>
-                                        <Link to="#">Neem contact op</Link>
+                                        <Link to="/contactus">Neem contact op</Link>
                                         </li>
                                         <li>
                                         <Link to="#">Veelgestelde vragen</Link>
@@ -82,10 +89,10 @@ const HomeFooter = () =>{
                                 <div className="hfoot-list-content">
                                     <ul>
                                         <li>
-                                        <Link to="#">Privacy</Link>
+                                        <Link to="/privacy">Privacy</Link>
                                         </li>
                                         <li>
-                                        <Link to="#">Voorwaarden</Link>
+                                        <Link to="/terms">termen</Link>
                                         </li>
                                         <li>
                                         <Link to="#">Nederlands</Link>

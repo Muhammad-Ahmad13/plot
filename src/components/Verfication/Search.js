@@ -28,10 +28,11 @@ const Search = () => {
       getAnswer();
     }, [posts]);
   const handleLocat = (name , loc, id, latit, longit, scraped) =>{
+    let dict = {'funda.nl':1}
     setPosts(name+', '+ loc);
     let placeData;
-    placeData = (name.replace(" ", "-") + '|' + loc.replace(" ", "-") + '|' + id + '|' + latit + '|' + longit + '|' + scraped);
-    placeData = placeData.replace(" ", "-");
+    placeData = (name.replace(" ", "+") + '-' + loc.replace(" ", "+") + '-' + id + '-' + latit + '-' + longit + '-' + dict[scraped]);
+    placeData = placeData.replace(" ", "+");
     setTotalData(placeData);
     let urlData = placeData;
     setUrl(urlData);

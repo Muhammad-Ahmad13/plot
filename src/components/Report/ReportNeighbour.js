@@ -14,14 +14,17 @@ export default function ReportNeighbour() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(7);
   let windowLoc1 = window.location.pathname;
+  console.log(windowLoc1);
   windowLoc1 = windowLoc1.replace("/detail/","");
-  windowLoc1 = windowLoc1.split("%7C");
-  windowLoc1 = windowLoc1[3]+"|"+windowLoc1[4]+"|"+windowLoc1[5];
+  windowLoc1 = windowLoc1.split("-");
+  windowLoc1 = windowLoc1[3]+"-"+windowLoc1[4]+"-"+windowLoc1[5];
   const [neighbourName, setNeighbourName]= useState([]);
   const [avail, setAvail] = useState(false);
+  const [totalNeigh, setTotalNeigh] = useState("")
   const getNeighbour = async () => {
     const resp  = await axios.get("https://34.90.29.163:90/reterive_data/neighbours/?query="+ windowLoc1);
     setNeighbourName(resp.data);
+    setTotalNeigh(resp.data.length); 
     setAvail(true);
   };
   useEffect(() => {
@@ -37,15 +40,27 @@ export default function ReportNeighbour() {
       align: 'left',
     },
     {
+      id: 'price',
+      label: 'Price',
+      minWidth: 100,
+      align: 'left',
+    },
+    {
+      id: 'pricem',
+      label: 'Price/m',
+      minWidth: 100,
+      align: 'left',
+    },
+    {
       id: 'Contruct-Year',
       label: 'Construct-Year',
-      minWidth: 100,
+      minWidth: 150,
       align: 'left',
     },
     {
       id: 'Distance',
       label: 'Distance (KM)',
-      minWidth: 100,
+      minWidth: 150,
       align: 'left',
     },
   ];  
@@ -58,6 +73,7 @@ export default function ReportNeighbour() {
   };
   return (
     <>
+    {/* <p>{}</p> */}
     <div className="container">
       <div className="tablemain">
         <div className="dataTable">
@@ -102,6 +118,8 @@ export default function ReportNeighbour() {
                       <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.name+", "+row.location}</TableCell>
                       <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.house_type}</TableCell>
                       <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.plot_size}</TableCell>
+                      <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.total_asking_price}</TableCell>
+                      <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.asking_per_sq}</TableCell>
                       <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.construction_year}</TableCell>
                       <TableCell style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryMedium"}}>{row.distance}</TableCell>
                   </TableRow>
@@ -118,7 +136,7 @@ export default function ReportNeighbour() {
           page={page}
           onPageChange={handleChangePage}
           onRowsPerPageChange={handleChangeRowsPerPage}
-          style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryBold", marginTop:"15px" }}
+          style={{ color: "#231F20", fontSize:"18px", fontFamily:"giloryBold", marginTop:"15px"}}
           />  
       </Paper>
       :

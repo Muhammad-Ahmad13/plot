@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ReactDomServer from "react-dom/server";
 import "./HwrapContent.css";
+import jsPDF from "jspdf";
 const HwrapContent = (props) => {
+   
+   
   return (
     <div className="wrapcontentmian">
         <div className="container">
@@ -17,8 +21,8 @@ const HwrapContent = (props) => {
                         {props.wrapdescrip}
                     </p>
                     <div className="wrapcontentanc mt-4">
-                        <Link className="bg1" to="#">Dowload PDF</Link>
-                        <Link className="bg2" to="#">Dowload Excel</Link>
+                        <Link className="bg1" onClick={props.handlePdf} to="#">Dowload PDF</Link>
+                        <Link className="bg2" onClick={props.handleExcel}  to="#">Dowload Excel</Link>
                     </div>
                 </div>
                 <div className="wrapcontentdata2">
