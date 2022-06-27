@@ -7,8 +7,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import passEye1 from "../../assets/images/password-eye.png";
 import passhide from "../../assets/images/passhide.png";
-// import mailicon from "../../assets/images/email-icon.png";
-// import lockicon from "../../assets/images/lock-image.png";
 import "./SignUP.css";
 const Login = () =>{
     const [loginMail,setLoginMail] = useState("");
@@ -27,13 +25,8 @@ const Login = () =>{
         const email = loginMail;
         const password = passwordLogin;
         const logData = {email, password}
-        console.log(logData)
-        axios.post("http://127.0.0.1:8000/api/login/", logData).then(res=>{
-            console.log(res)
-            console.log(logData)
-            console.log(res.data.access);
+        axios.post("https://34.90.29.163:90/api/login/", logData).then(res=>{
             logRes = res.status;
-            console.log(res.status)
             switch(res.status){
                 case 202:
                 setLogData(true);
