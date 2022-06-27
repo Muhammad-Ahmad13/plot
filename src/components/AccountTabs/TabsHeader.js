@@ -1,7 +1,7 @@
 import React from 'react';
 import "./TabsHeader.css";
 import tablogo from "../../assets/images/logo-blue.jpg";
-import profimg from "../../assets/images/profileimg.png"; 
+import profimg from "../../assets/images/profileimg1.png"; 
 import dropIcon from "../../assets/images/proposhat.png";
 import ProfileData from './ProfileData';
 import { Link } from 'react-router-dom';

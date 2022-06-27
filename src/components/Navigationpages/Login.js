@@ -15,11 +15,11 @@ const Login = () =>{
     const [passwordLogin , setPasswordLogin] = useState("");
     const [show , setShow] = useState(true);
     const [passLogShow , setPassLogShow] = useState(false);
-    const [eyeShow, setEyeShow] = useState(true)
+    const [eyeShow, setEyeShow] = useState(true);
+    const [logData , setLogData] = useState(false);
     const toggleLogPass = () =>{
         setPassLogShow(!passLogShow);
     }
-    // const [count , setCount] = useState(0);
     const navigate = useNavigate();
     const handleSubmitLogin = (e) =>{
         e.preventDefault();
@@ -28,27 +28,31 @@ const Login = () =>{
         const password = passwordLogin;
         const logData = {email, password}
         console.log(logData)
-        axios.post("http://127.0.0.1:8000/api/token/", logData).then(res=>{
+        axios.post("http://127.0.0.1:8000/api/login/", logData).then(res=>{
             console.log(res)
             console.log(logData)
+            console.log(res.data.access);
             logRes = res.status;
-            switch(logRes){
-                case 200:
-                toast.success("data submit successfully");
+            console.log(res.status)
+            switch(res.status){
+                case 202:
+                setLogData(true);
+                toast.success("Login successfully...");
+                navigate("/");
+                break;
+                case 405:
+                toast.info("Invalid Request");
                 break;
                 case 400:
-                toast.error("Invalid Data");
-                break;
-                case 500:
-                toast.info("data already exist");
+                toast.info("Invalid Password");
                 break;
                 default:
-                toast.info("data does not submit");
+                toast.info("Invalid Data");
             }  
         }).catch(err=>{
-            console.log(err)
+            console.log(err.status)
+            toast.error("Invalid UserName or Password");
         })
-        setLoginMail('');
         setPasswordLogin('');
     }
     const handleClickBtn = () =>{
@@ -58,8 +62,8 @@ const Login = () =>{
         setEyeShow(!eyeShow)
     }
     useEffect(() =>{
-        return() =>{
-        }
+        // return() =>{
+        // }
     },[]);
     return(
         <>
@@ -104,8 +108,7 @@ const Login = () =>{
                                 </span>
                             </div>
                             <div className="sign-anc">
-                                <button type="submit" onClick={() => {navigate("/")}}>Login</button>
-                                {/* <a type="submit" href="/">Login</a> */}
+                                 <button type="submit">Login</button>
                             </div>
                         </form>
                         <ToastContainer 

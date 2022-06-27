@@ -77,27 +77,6 @@ const SignUP = (props) =>{
             const email = values.email;
             const password1 = values.password;
             const blog = {username, email, password1}
-            // fetch('http://127.0.0.1:8000/api/register/',{
-            //     method:"POST",
-            //     headers:{"Content-Type": "application/json"},
-            //     body : JSON.stringify(blog)
-            // }).then((response)=>{
-            //     console.log(response);
-            //     res = response.status;
-            //     switch(res){
-            //         case 201:
-            //         toast.success("data submit successfully");
-            //         break;
-            //         case 400:
-            //         toast.error("Invalid Data");
-            //         break;
-            //         case 500:
-            //         toast.info("data already exist");
-            //         break;
-            //         default:
-            //         toast.info("data does not submit");
-            //     }
-            // })
             axios.post('http://127.0.0.1:8000/api/register/', blog).then(response=>{
                 console.log(response)
                 console.log(blog)
