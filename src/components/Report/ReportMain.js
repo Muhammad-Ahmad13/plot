@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import jsPDF from "jspdf";
 import HomeFooter from '../HomePage/HomeFooter/HomeFooter';
 import ReportBid from './ReportBid';
 import ReportFacts from './ReportFacts';
@@ -22,6 +23,7 @@ const ReportMain = () => {
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
   const [apart, setApart] = useState("");
+  const [pict, setPict] = useState("");
   const [bed, setBed] = useState("");
   const [year, setYear] = useState("");
   const [meter, setMeter] = useState("");
@@ -35,10 +37,13 @@ const ReportMain = () => {
   const [upmFive, setUpmFive] = useState("");
   const [lmFive, setLmFive] = useState("");
   const [lmTen, setLmTen] = useState("");
+  
   const getClient = async () => {
     const response  = await axios.get("https://34.90.29.163:90/reterive_data/details/?query="+ windowLoc);
+    console.log(response)
     setClient(response.data.details.name);
     setDescription(response.data.details.description);
+    setPict(response.data.picture.picture_1);
     setPrice(response.data.total_price);
     var dotPrice = (response.data.total_price);
     var upPrice = dotPrice + (dotPrice*(0.05));
@@ -68,6 +73,26 @@ const ReportMain = () => {
     return () => {
     };
   }, []);
+  const generatePdf = ()=>{
+    var doc = new jsPDF('p', 'pt');
+    doc.text(20, 20,"Property Name:" + client + ", " + locat )
+    doc.addFont('helvetica', 'normal')
+    doc.text(20, 60, 'Year:'+ year)
+    doc.text(20, 80, 'Beds:'+ bed) 
+    doc.text(20, 100, 'Apartment:'+ apart)
+    doc.text(20, 120, 'Price:'+ price)      
+    doc.save('plotcore.pdf')
+}
+const generateExcel = ()=>{
+  var docExcel = new jsPDF('p', 'pt');
+  // docExcel.text(20, 20,"Property Name:" + client + ", " + locat );
+  //   docExcel.addFont('helvetica', 'normal')
+  //   docExcel.text(20, 60, 'Year:'+ year)
+  //   docExcel.text(20, 80, 'Beds:'+ bed) 
+  //   docExcel.text(20, 100, 'Apartment:'+ apart)
+  //   docExcel.text(20, 120, 'Price:'+ price)   
+  docExcel.save('plotcore.xlsx');
+}
   return (
     <div className="reportmain">
       {load ?
@@ -76,8 +101,13 @@ const ReportMain = () => {
         <ReportHWrap/>
         <HwrapContent
         wrapName = {client + ", " + locat}
-        headImage = {headImage1}
-        wrapdescrip ="Ontdek alles wat je wilt weten over dit huis. Extra paar ogen nodig? Deel dit rapport met familie, vrienden of bespreek het met een aankoopexpert van Walter Alles-in-1."/>
+        headImage = {pict}
+        wrapdescrip ="Ontdek alles wat je wilt weten over dit huis. Extra paar ogen nodig? Deel dit rapport met familie, vrienden of bespreek het met een aankoopexpert van Walter Alles-in-1."
+        handlePdf={generatePdf}
+        handleExcel= {generateExcel}>
+          
+        </HwrapContent>
+        {/* <button className="primary" onClick={generatePdf}>download Excel</button> */}
         <ReportProg
         propertyName={client + ", " + locat}
         pApart = {apart +"· "}

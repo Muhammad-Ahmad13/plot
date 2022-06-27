@@ -14,6 +14,9 @@ import PricingMian from './components/Pricing/PricingMian';
 import TabsMain from './components/AccountTabs/TabsMain';
 import ReportMain from './components/Report/ReportMain';
 import Search from './components/Verfication/Search';
+import Verificationmail from './components/Veificationmail/Verificationmail';
+import Privacy from './components/Privacy/Privacy';
+import Terms from './components/Privacy/Terms';
 function App() {
   return (
     <div className="App">
@@ -33,6 +36,9 @@ function App() {
         {/* <Route exact path='/report' element = {<ReportMain/>}></Route> */}
         <Route exact path='/verify' element = {<Search/>}></Route>
         <Route path={"/detail/:locat"} element = {<ReportMain/>}></Route>
+        <Route path={"/mailverify"} element = {<Verificationmail/>}></Route>
+        <Route path={"/privacy"} element = {<Privacy/>}></Route>
+        <Route path={"/terms"} element = {<Terms/>}></Route>
       </Routes> 
     </div>
   );

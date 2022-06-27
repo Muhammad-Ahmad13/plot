@@ -11,13 +11,13 @@ const ReportHWrap = () => {
                 <div className="Hwrapcontent1">
                     <ul>
                         <li>
-                            <Link to ="/demo">Kopen met Plotcore</Link>
+                            <Link to ="/contactus">Contact</Link>
                         </li>
                         <li>
                             <Link to ="/proposal">Zelf berekenen</Link>
                         </li>
                         <li>
-                            <Link to ="/rental">Hoe het werkt</Link>
+                            <Link to ="/rental">Verhuur</Link>
                         </li>
                         <li>
                             <Link to ="/pricing">Prijzen</Link>
@@ -27,7 +27,7 @@ const ReportHWrap = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="Hwrapcontent2">
+                {/* <div className="Hwrapcontent2">
                     <div className="dropdown hwrapdropimg">
                         <a className="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <label>Filteren:</label>
@@ -40,7 +40,7 @@ const ReportHWrap = () => {
                             <li><Link className="dropdown-item" to ="#">Sign Out</Link></li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

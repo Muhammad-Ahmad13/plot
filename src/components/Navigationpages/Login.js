@@ -15,20 +15,26 @@ const Login = () =>{
     const [passLogShow , setPassLogShow] = useState(false);
     const [eyeShow, setEyeShow] = useState(true);
     const [logData , setLogData] = useState(false);
+    const [token, setToken] = useState("");
     const toggleLogPass = () =>{
         setPassLogShow(!passLogShow);
     }
     const navigate = useNavigate();
+    let tokenResponse = "";
     const handleSubmitLogin = (e) =>{
         e.preventDefault();
         let logRes;
         const email = loginMail;
         const password = passwordLogin;
         const logData = {email, password}
-        axios.post("https://34.90.29.163:90/api/login/", logData).then(res=>{
+        axios.post("https://34.90.29.163:90/api/token/", logData).then(res=>{
+            // let accessHeaders = "Bearer "+res.data.access;
+            setToken(res.data.access);
             logRes = res.status;
+            setToken(res.data.access);
+            console.log(res)
             switch(res.status){
-                case 202:
+                case 200:
                 setLogData(true);
                 toast.success("Login successfully...");
                 navigate("/");
@@ -48,6 +54,14 @@ const Login = () =>{
         })
         setPasswordLogin('');
     }
+    // const getToken = async () => {
+    //     let accessHeader = {
+    //         headers: {'Authorization':"Bearer " +token}
+    //     }
+    //     console.log(token);
+    //     const reponseToken =await axios.get("http://127.0.0.1:8000/api/user-data/", accessHeader);
+    //     console.log(reponseToken);
+    //     }
     const handleClickBtn = () =>{
         setShow(!show)
     } 
@@ -55,6 +69,7 @@ const Login = () =>{
         setEyeShow(!eyeShow)
     }
     useEffect(() =>{
+        // getToken();
         // return() =>{
         // }
     },[]);

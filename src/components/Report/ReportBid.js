@@ -6,7 +6,7 @@ const ReportBid = () => {
     <div className="bidmain mt-5">
         <ReportHP
          hphead="Wat hebben kopers geboden op huizen?"
-         hppara="Maak een Walter Plus rapport aan voor elk ander adres in Nederland."
+         hppara="Maak een Plotcore Plus rapport aan voor elk ander adres in Nederland."
         />
         <HouseSearch/>
     </div>
