@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, { createContext, useEffect, useState} from "react";
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -10,7 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import "./ReportNeighbour.css";
 import axios from 'axios';
 import markermap from "../../assets/images/markermap.png";
-export default function ReportNeighbour() {
+export default function ReportNeighbour(props) {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(7);
   let windowLoc1 = window.location.pathname;
@@ -20,11 +20,19 @@ export default function ReportNeighbour() {
   windowLoc1 = windowLoc1[3]+"-"+windowLoc1[4]+"-"+windowLoc1[5];
   const [neighbourName, setNeighbourName]= useState([]);
   const [avail, setAvail] = useState(false);
-  const [totalNeigh, setTotalNeigh] = useState("")
   const getNeighbour = async () => {
     const resp  = await axios.get("https://34.90.29.163:90/reterive_data/neighbours/?query="+ windowLoc1);
     setNeighbourName(resp.data);
-    setTotalNeigh(resp.data.length); 
+    props.setTotalNeigh(resp.data.length); 
+    let priceDatam = 0;
+    let priceTotalm = 0;
+    for (let i = 0; i < resp.data.length; i++){
+      priceDatam = priceDatam + (resp.data[i].asking_per_sq);
+      priceTotalm = priceTotalm + (resp.data[i].total_asking_price);
+    }
+    console.log(priceDatam)
+    props.setPriceInMeter(Math.round(priceTotalm/resp.data.length));
+    props.setPriceInTotal(Math.round(priceDatam/resp.data.length));
     setAvail(true);
   };
   useEffect(() => {
@@ -73,7 +81,6 @@ export default function ReportNeighbour() {
   };
   return (
     <>
-    {/* <p>{}</p> */}
     <div className="container">
       <div className="tablemain">
         <div className="dataTable">

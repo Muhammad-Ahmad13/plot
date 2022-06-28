@@ -15,7 +15,9 @@ const Login = () =>{
     const [passLogShow , setPassLogShow] = useState(false);
     const [eyeShow, setEyeShow] = useState(true);
     const [logData , setLogData] = useState(false);
-    const [token, setToken] = useState("");
+    const [userName, setUserName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
+    // const [token, setToken] = useState("");
     const toggleLogPass = () =>{
         setPassLogShow(!passLogShow);
     }
@@ -28,16 +30,26 @@ const Login = () =>{
         const password = passwordLogin;
         const logData = {email, password}
         axios.post("https://34.90.29.163:90/api/token/", logData).then(res=>{
-            // let accessHeaders = "Bearer "+res.data.access;
-            setToken(res.data.access);
+            let token = res.data.access;
             logRes = res.status;
-            setToken(res.data.access);
+            console.log(token)
             console.log(res)
             switch(res.status){
                 case 200:
                 setLogData(true);
                 toast.success("Login successfully...");
-                navigate("/");
+                // navigate("/");
+                // const getToken = async () => {
+                    let accessHeader = {
+                        headers: {'Authorization':"Bearer " +token}
+                    }
+                    console.log(token);
+                    axios.get("https://34.90.29.163:90/api/user-data/", accessHeader).then(resp=>{
+                    console.log(resp);
+                    navigate("/");
+                }).catch(errp=>{
+                    console.log(errp.status)
+                })  
                 break;
                 case 405:
                 toast.info("Invalid Request");
@@ -61,6 +73,8 @@ const Login = () =>{
     //     console.log(token);
     //     const reponseToken =await axios.get("http://127.0.0.1:8000/api/user-data/", accessHeader);
     //     console.log(reponseToken);
+    //     navigate("/");
+
     //     }
     const handleClickBtn = () =>{
         setShow(!show)
@@ -69,7 +83,7 @@ const Login = () =>{
         setEyeShow(!eyeShow)
     }
     useEffect(() =>{
-        // getToken();
+    
         // return() =>{
         // }
     },[]);

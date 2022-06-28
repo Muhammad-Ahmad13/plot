@@ -33,7 +33,7 @@ const HomeFooter = () =>{
                             <div className="foot-contactdata">
                                 <a href="tel:+31 6 40848267">+31 6 40848267</a>
                                 <div>
-                                <a href="mailto:max.mustermann@example.com">info@plotcore.com</a>
+                                    <a href="mailto:info@plotcore.com">info@plotcore.com</a>
                                 </div>
                             </div>
                             <span></span>

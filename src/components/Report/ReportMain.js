@@ -37,7 +37,9 @@ const ReportMain = () => {
   const [upmFive, setUpmFive] = useState("");
   const [lmFive, setLmFive] = useState("");
   const [lmTen, setLmTen] = useState("");
-  
+  const [totalNeigh, setTotalNeigh] = useState(0);
+  const [priceInMeter, setPriceInMeter] = useState(0);
+  const [priceInTotal, setPriceInTotal] = useState(0);
   const getClient = async () => {
     const response  = await axios.get("https://34.90.29.163:90/reterive_data/details/?query="+ windowLoc);
     console.log(response)
@@ -93,6 +95,8 @@ const generateExcel = ()=>{
   //   docExcel.text(20, 120, 'Price:'+ price)   
   docExcel.save('plotcore.xlsx');
 }
+// let dataP = price;
+// let datam = meterPrice;
   return (
     <div className="reportmain">
       {load ?
@@ -105,9 +109,7 @@ const generateExcel = ()=>{
         wrapdescrip ="Ontdek alles wat je wilt weten over dit huis. Extra paar ogen nodig? Deel dit rapport met familie, vrienden of bespreek het met een aankoopexpert van Walter Alles-in-1."
         handlePdf={generatePdf}
         handleExcel= {generateExcel}>
-          
         </HwrapContent>
-        {/* <button className="primary" onClick={generatePdf}>download Excel</button> */}
         <ReportProg
         propertyName={client + ", " + locat}
         pApart = {apart +"· "}
@@ -137,9 +139,19 @@ const generateExcel = ()=>{
         <ReportMissmain/>
         <ReportNearby/>
         <ReportRecent/>
-        <ReportNeighbour/>
+        <ReportNeighbour
+        setTotalNeigh={setTotalNeigh}
+        totalNeigh={totalNeigh}
+        setPriceInMeter={setPriceInMeter}
+        priceInMeter={priceInMeter}
+        priceInTotal= {priceInTotal}
+        setPriceInTotal={setPriceInTotal}/>
         <ReportSpar/>
-        <ReportFacts/>
+        <ReportFacts
+        pricest = {priceInTotal}
+        pricetm = {priceInMeter}
+        totalNeigh={totalNeigh}
+        />
         <ReportProperty/>
         <ReportBid/>
         <HomeFooter/>

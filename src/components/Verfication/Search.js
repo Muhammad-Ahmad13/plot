@@ -19,7 +19,7 @@ const Search = () => {
     const getAnswer = async () => {
       if (posts !=='')
       {
-        const response  = await axios.get("https://34.90.29.163:90/reterive_data/?query="+ posts);
+        const response  = await axios.get("http://127.0.0.1:8000/reterive_data/?query="+ posts);
         setUpData(response.data);
         setSData(response.data);
     }
