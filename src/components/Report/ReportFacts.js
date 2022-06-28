@@ -2,7 +2,7 @@ import React from 'react';
 import FactCards from './FactCards';
 import "./ReportFacts.css";
 import ReportHP from './ReportHP';
-const ReportFacts = () => {
+const ReportFacts = (props) => {
   return (
     <div className="reportfactmain">
         <div className="reportfacthead py-3">
@@ -22,21 +22,21 @@ const ReportFacts = () => {
                 </div>
                 <div className='reportfactcontent'>
                     <FactCards
-                    factnum="9"
+                    factnum ={props.totalNeigh} 
                     facthead="Huizen verkocht"
                     factpara="Dit waren alle transacties in de wijk in de afgelopen 12 maanden."
                     />
                 </div>
                 <div className='reportfactcontent'>
                     <FactCards
-                    factnum="€ 266.000"
+                    factnum={props.pricest}
                     facthead="Gemiddelde koopsom"
                     factpara="Wielwijk vergeleken met € 272.500 in Dordrecht."
                     />
                 </div>
                 <div className='reportfactcontent'>
                     <FactCards
-                    factnum="€ 3.129"
+                    factnum ={props.pricetm}
                     facthead="Gem. vierkantemeterprijs"
                     factpara="Wielwijk vergeleken met € 2.927 in Dordrecht."
                     />

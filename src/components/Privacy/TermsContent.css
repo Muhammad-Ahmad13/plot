@@ -5,3 +5,33 @@
     margin: 0;
     padding: 10px 0;
 }
+.articlecontent{
+    padding: 15px 0;
+}
+.articlecontent h3{
+    color: #353535;
+    font-size: 24px;
+    font-family: "giloryBold";
+    margin: 0;
+    padding: 10px 0;
+}
+.articlecontent p{
+    color: #353535;
+    font-size: 20px;
+    font-family: "giloryMedium";
+    margin: 0;
+    padding: 10px 0;
+}
+@media screen and (max-width:600px){
+    .termdatasec1 h3{
+        font-size: 20px;
+    }
+    .articlecontent h3{
+        font-size: 20px;
+        padding: 7px 0;
+    }
+    .articlecontent p{
+        font-size: 16px;
+        padding: 5px 0;
+    }
+}
