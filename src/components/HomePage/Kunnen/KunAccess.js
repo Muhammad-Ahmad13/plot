@@ -16,8 +16,8 @@ const KunAccess = () =>{
                 textPara="Laat technologie jou helpen bij het verzamelen van alle informatie over een woning. In de woningmarkt
                 is informatie het belangrijkste wat er is. Wie de juiste informatie in handen heeft binnen de woningmarkt is
                 koning. Kom nu alle informatie te weten over een specifieke woning."
-                anchorAddress="#"
-                textAnchor="Direct starten"
+                anchorAddress="/pricing"
+                textAnchor="Probeer het gratis"
                 />
             </div>
             <div className="access-content2">
