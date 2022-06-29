@@ -1,5 +1,6 @@
 import React from "react";
 import "./ImprovementMain.css";
+import { Link } from "react-router-dom";
 const ImprovementMain = () =>{
     return(
         <div className="improve-main">
@@ -14,7 +15,7 @@ const ImprovementMain = () =>{
                             schroom dan niet. Neem contact met ons op en wij zorgen er direct voor dat ons team aan specialisten dit voor u realiseert.
                         </p>
                         <div className="improve-anc">
-                            <a href="#">Direct starten huurmarkt</a>
+                            <Link to="#">Help Plotcore Verbeteren!</Link>
                         </div>
                     </div>
                 </div>

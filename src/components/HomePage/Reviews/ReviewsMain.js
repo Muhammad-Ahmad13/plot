@@ -8,8 +8,7 @@ const ReviewsMain = () =>{
            <div className="container">
            <Kunnen
                 kunHead="Reviews"
-                kunPara="Lorem ipsum georening bukoska vaben. Dogyns eurong.
-                Povisovis josm, emedan semis. Harat rar par."
+                kunPara="Wat andere woningzoekers zeggen over Plotcore"
             />
             <ReviewsCarousel />
            </div>

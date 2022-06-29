@@ -15,7 +15,7 @@ const HomeWrapper = () =>{
                             Laat technologie jou helpen bij het zoeken naar een woning.
                         </p>
                         <div className="modern-anc">
-                            <Link to ="/pricing">Direct starten</Link>
+                            <Link to ="/pricing">Probeer het gratis</Link>
                         </div>
                     </div>
                     <div className="modern-content2">

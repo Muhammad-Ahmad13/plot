@@ -11,7 +11,7 @@ const KunAccess = () =>{
         <div className="access-mian">
             <div className="access-content">
                 <AccessContent
-                textFirst="Lorem ipsum trir bedade"
+                textFirst="Zie alle info die de makelaar je niet vertelt in één overzicht."
                 textHeading="Toegang tot alle woninginformatie"
                 textPara="Laat technologie jou helpen bij het verzamelen van alle informatie over een woning. In de woningmarkt
                 is informatie het belangrijkste wat er is. Wie de juiste informatie in handen heeft binnen de woningmarkt is

@@ -19,15 +19,15 @@ const HomeFooter = () =>{
                                 </Link>
                             </div>
                             <p>
-                                Lorem ipsum aras beskade nede plakar. Sad monorade. Soven fade negon. 
-                                Samosat neras pykas. Preligt anas egoliga. Astrovis lavis revis an. 
+                                Hulp nodig met je droomhuis kopen?
+                                Want geloof ons. Met Plotcore wordt een huis kopen veel makkelijker 
                             </p>
                             <ul>
                                 <li>
                                 <Link to="#"><img src={footIcon1} alt="foot-icon"/></Link>
-                                <Link to="#"><img src={footIcon2} alt="foot-icon"/></Link>
-                                <Link to="#"><img src={footIcon3} alt="foot-icon"/></Link>
-                                <Link to="#"><img src={footIcon4} alt="foot-icon"/></Link>
+                                <a href="https://twitter.com/Plotcore"><img src={footIcon2} alt="foot-icon"/></a>
+                                <a href="https://www.linkedin.com/company/plotcore/"><img src={footIcon3} alt="foot-icon"/></a>
+                                <a href="https://www.instagram.com/plotcore/"><img src={footIcon4} alt="foot-icon"/></a>
                                 </li>
                             </ul>
                             <div className="foot-contactdata">

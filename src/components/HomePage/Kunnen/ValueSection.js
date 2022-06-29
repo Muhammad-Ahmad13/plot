@@ -35,8 +35,8 @@ const ValueSection = () =>{
                 conditionImage = {valueProperty2}
                 conditionHeading = ""
                 conditionPara = ""
-                conditionprice1 = "€ 277.000"
-                conditionprice2 = "€ 2.972 m"
+                conditionprice1 = "€ 195.000"
+                conditionprice2 = "€ 1.753 m"
                 bottomHeading = "Plotcores Woningwaarde"
                 bottomPara = "Goede conditie"
                 />
@@ -46,8 +46,8 @@ const ValueSection = () =>{
                 conditionImage = {valueProperty3}
                 conditionHeading = ""
                 conditionPara = ""
-                conditionprice1 = "€ 277.000"
-                conditionprice2 = "€ 2.972 m"
+                conditionprice1 = "€ 307.000"
+                conditionprice2 = "€ 3.172 m"
                 bottomHeading = "Plotcores Woningwaarde"
                 bottomPara = "Goede conditie"
                 />
