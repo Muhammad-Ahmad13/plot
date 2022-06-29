@@ -6,9 +6,9 @@ const ManagerCard= (props) =>{
             <div className="manager-image">
                 <img src={props.manageImage} alt="manage-image"/>
             </div>
-            <p>
+            {/* <p>
                {props.managerPara} 
-            </p>
+            </p> */}
         </div>
     );
 }

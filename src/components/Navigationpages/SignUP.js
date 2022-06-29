@@ -78,8 +78,6 @@ const SignUP = (props) =>{
             const password1 = values.password;
             const blog = {username, email, password1}
             axios.post('https://34.90.29.163:90/api/register/', blog).then(response=>{
-                console.log(response)
-                console.log(blog)
                 res = response.status;
                     switch(res){
                         case 201:
