@@ -4,7 +4,15 @@ import logo from "../../../assets/images/logo-image.png";
 import icon from "../../../assets/images/burger-icon-icon-removebg-preview.png";
 import { Link } from "react-router-dom";
 import ModalSignLog from "../../Navigationpages/ModalSignLog";
+import { useSelector,useDispatch } from "react-redux/es/exports";
+import {logout} from "../../../store/slice/AuthSlice";
 const HomeHeader = () =>{
+    const {isLoggedIn} = useSelector(state => state.auth)
+    const dispatch = useDispatch()
+    const logouto= () =>{
+        dispatch(logout())
+    }
+    console.log(isLoggedIn)
     return(
     <header>
          <nav className="navbar navbar-expand-lg  home-main">
@@ -35,7 +43,9 @@ const HomeHeader = () =>{
                     </li>
                     <div className="home-list-btn">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/login">Login/Aanmelden</Link>
+                        {!isLoggedIn ?
+                        <Link className="nav-link" to="/login">Login/Aanmelden</Link>:
+                        <a className="nav-link" onClick={logouto} >Logout</a>}
                             {/* <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gratis infomatiegesprek</Link> */}
                         </li>
                     </div>

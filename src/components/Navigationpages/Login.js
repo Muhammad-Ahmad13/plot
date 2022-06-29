@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import {useSelector, useDispatch} from 'react-redux'
 import Forgot from "./Forgot";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -7,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import passEye1 from "../../assets/images/password-eye.png";
 import passhide from "../../assets/images/passhide.png";
+import {login} from "../../store/slice/AuthSlice"
 import "./SignUP.css";
 const Login = () =>{
     const [loginMail,setLoginMail] = useState("");
@@ -17,6 +19,10 @@ const Login = () =>{
     const [logData , setLogData] = useState(false);
     const [userName, setUserName] = useState("");
     const [userEmail, setUserEmail] = useState("");
+    // const {usersName,usersEmail,isLoggedIn} = useSelector(state => state.auth);
+    const {isLoggedIn} = useSelector(state => state.auth);
+    const dispatch = useDispatch()
+    //const abc = useSelector(state => state.auth)
     // const [token, setToken] = useState("");
     const toggleLogPass = () =>{
         setPassLogShow(!passLogShow);
@@ -32,8 +38,6 @@ const Login = () =>{
         axios.post("https://34.90.29.163:90/api/token/", logData).then(res=>{
             let token = res.data.access;
             logRes = res.status;
-            console.log(token)
-            console.log(res)
             switch(res.status){
                 case 200:
                 setLogData(true);
@@ -43,9 +47,8 @@ const Login = () =>{
                     let accessHeader = {
                         headers: {'Authorization':"Bearer " +token}
                     }
-                    console.log(token);
                     axios.get("https://34.90.29.163:90/api/user-data/", accessHeader).then(resp=>{
-                    console.log(resp);
+                    dispatch(login(resp.data))
                     navigate("/");
                 }).catch(errp=>{
                     console.log(errp.status)
@@ -83,7 +86,6 @@ const Login = () =>{
         setEyeShow(!eyeShow)
     }
     useEffect(() =>{
-    
         // return() =>{
         // }
     },[]);
@@ -133,10 +135,10 @@ const Login = () =>{
                                  <button type="submit">Login</button>
                             </div>
                         </form>
-                        <ToastContainer 
+                        {/* <ToastContainer 
                         position="top-center"
                         autoClose={3000}
-                    />
+                    /> */}
                     </div>
                     :
                     <div className="sign-data" id="sign-forgot">
@@ -147,7 +149,11 @@ const Login = () =>{
                     }
                     <span><Link to=""  onClick={handleClickBtn}>{show === true ? "Forgot Password ?": "Back to Login" }</Link></span>
                 </div>                     
-            </div>        
+            </div> 
+            <ToastContainer 
+                position="top-center"
+                autoClose={500}
+            />       
         </>
     );
 }
