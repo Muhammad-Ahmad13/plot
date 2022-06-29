@@ -43,7 +43,7 @@ const ReviewsCarousel = () =>{
                     carousPara="Ik kreeg elke dag keurig een lijst met woningen die voldoen aan mijn eisen en wensen.
                     Hierdoor kon ik direct bellen met de makelaar en was ik één van de eerste, waardoor ik de makelaar
                     heb overtuigd om het aan mij te verkopen"
-                    carousImage={carous1}
+                    carousImage={carous2}
                     carousHeading="Sanne"
                     addressdata="#"
                     carousAnchorText="Rotterdam"
@@ -55,7 +55,7 @@ const ReviewsCarousel = () =>{
                     <CarouselCard 
                     carousPara="Voordat ik Plotcore gebruikte koste het mij elke dag twee uur om woningen op diverse
                     platformen te zoeken, door Plotcore hoef ik dit niet meer te doen en ontvang ik elke dag een lijst."
-                    carousImage={carous2}
+                    carousImage={carous1}
                     carousHeading="Mustapha"
                     addressdata="#"
                     carousAnchorText="Amsterdam"

@@ -1,5 +1,6 @@
 import React from "react";
 import "./AccessContent.css";
+import { Link } from "react-router-dom";
 const AccessContent = (props) =>{
     return(
         <div className="content-mian">
@@ -12,7 +13,7 @@ const AccessContent = (props) =>{
                     {props.textPara}
                 </p>
                 <div className="content-anc">
-                    <a href={props.anchorAddress}>{props.textAnchor}</a>
+                    <Link to={props.anchorAddress}>{props.textAnchor}</Link>
                 </div>
             </div>
         </div>
