@@ -14,25 +14,21 @@ const HomeManagerCards = () =>{
                     <div className="homecard-content mt-3">
                         <ManagerCard
                         manageImage={company1}
-                        managerPara="Lorem ipsum trir bedade huruvida prossade esa"
                         />
                     </div>
                     <div className="homecard-content">
                         <ManagerCard
                         manageImage={company2}
-                        managerPara="Lorem ipsum trir bedade huruvida prossade esa"
                         />
                     </div>
                     <div className="homecard-content">
                         <ManagerCard
                         manageImage={company3}
-                        managerPara="Lorem ipsum trir bedade huruvida prossade esa"
                         />
                     </div>
                     <div className="homecard-content">
                         <ManagerCard
                         manageImage={company4}
-                        managerPara="Lorem ipsum trir bedade huruvida prossade esa"
                         />
                     </div>
                 </div>

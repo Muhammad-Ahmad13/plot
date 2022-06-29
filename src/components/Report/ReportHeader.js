@@ -8,7 +8,9 @@ import profimg1 from "../../assets/images/profileimg1.png";
 import dropIcon1 from "../../assets/images/proposhat.png";
 import headflag from "../../assets/images/headflag.png";
 import "./ReportHeader.css";
+import { useSelector } from "react-redux/es/exports";
 const ReportHeader = () => {
+  const {usersName} = useSelector(state => state.auth);
   return (
     <div>
       <header>
@@ -48,7 +50,7 @@ const ReportHeader = () => {
                         <div className="tabprofiledata">
                           <ProfileData
                            profimg = {profimg1}
-                           profhead = "Anna"
+                           profhead = {usersName}
                            profIcon = {dropIcon1}
                            />
                         </div>
