@@ -9,8 +9,8 @@ const KunnenMain= () =>{
             <div className="container">
                 <Kunnen
                 kunHead="Wat wij voor u kunnen doen"
-                kunPara="Lorem ipsum georening bukoska vaben. Dogyns eurong.
-                Povisovis josm, emedan semis. Harat rar par."
+                kunPara="Ontdek het geheim van de waarde van elk huis in Nederland. Met een Plotcore Plus abonnement
+                 check je de feiten direct online."
                  />
                 <KunAccess />
                 <ReceiveSec />

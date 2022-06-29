@@ -10,7 +10,7 @@ const ReceiveSec=()=>{
             </div>
             <div className="receive-content2">
                 <AccessContent
-                textFirst="Lörem ipsum trir bedade"
+                textFirst="Moeite met het vinden van een huur of Koopwoning?"
                 textHeading="Ben jij een starter? Ontvang je eigen data gedreven assistent!"
                 textPara="
                 Laat technologie jou helpen bij het vinden van een woning. In de woningmarkt draait het onder andere om op
@@ -22,7 +22,7 @@ const ReceiveSec=()=>{
                 aan zijn of haar eisen. Hierdoor bespaart het de woningzoekende veel tijd, kunnen ze in één oogopslag
                 zien welke woningen voldoen aan hun eisen, en kunnen ze als één van de eerste reageren op deze woningen."
                 anchorAddress="#"
-                textAnchor="Direct starten huuurmarkt"
+                textAnchor="Plaats direct jouw zoekopdracht"
                 />
             </div>
         </div>

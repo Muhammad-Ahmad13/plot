@@ -9,11 +9,11 @@ const BestPlatform = () =>{
                     <img src={marker}/>
                 </div>
                 <h4>
-                    Best Platform
+                    Succes
                 </h4>
             </div>
             <p>
-                Lorem ipsum trir bedade huruvida prossade esaning och fafav. Ovis kroktig, var. Sybel midade att stenoll nar
+                Ruim 70% van onze gebruikers vindt binnen 8 weken een huurwoning of koopwoning.
             </p>
         </div>
     );

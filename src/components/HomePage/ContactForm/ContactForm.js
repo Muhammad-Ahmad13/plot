@@ -5,7 +5,6 @@ const ContactForm = () =>{
     const [conPhone, setConPhone] = useState("");
     const [conMail, setConMail] = useState("");
     const [conText, setConText] = useState("");
-
     const handleContactForm = (e) =>{
         e.preventDefault();
         setConMail('')
@@ -22,8 +21,8 @@ const ContactForm = () =>{
                             Vragen? Neem contact op.
                         </h4>
                         <p>
-                            Lorem ipsum georening bukoska vaben. Dogyns eurong. 
-                            Povisovis josm, emedan semis. Harat rar par. 
+                            Voor vragen over onze diensten en prijzen kan je terecht in ons helpcenter. 
+                            Vind je daar het antwoord niet, dan kan je altijd contact met ons opnemen.
                         </p>
                     </div>
                     <div className="contact-content2">
@@ -33,7 +32,7 @@ const ContactForm = () =>{
                             </h4>
                             <div className="contact-input">
                                 <input type="text"
-                                 placeholder="Name"
+                                 placeholder="Naam"
                                  value={conName}
                                  onChange = {(e)=> setConName(e.target.value)}
                                  required
@@ -41,7 +40,7 @@ const ContactForm = () =>{
                             </div>
                             <div className="contact-input">
                                 <input type="phone" 
-                                  placeholder="Phone"
+                                  placeholder="Telefoonnummer"
                                   value={conPhone}
                                   onChange = {(e)=> setConPhone(e.target.value)} 
                                   required
@@ -57,14 +56,14 @@ const ContactForm = () =>{
                             </div>
                             <div className="contact-textarea">
                                 <textarea
-                                 placeholder="Message" 
+                                 placeholder="Bericht" 
                                  value={conText}
                                  onChange = {(e)=> setConText(e.target.value)} 
                                  rows="5"
                                 />
                             </div>
                             <div className="contact-anc">
-                                <button type="submit">Direct starten huurmarkt</button>
+                                <button type="submit">Verstuur jouw bericht</button>
                                 {/* <a href="#">Direct starten huurmarkt</a> */}
                             </div>
                         </form>
