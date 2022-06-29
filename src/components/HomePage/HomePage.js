@@ -9,12 +9,14 @@ import HomeWrapper from "./HomeWrapper/HomeWrapper";
 import KunnenMain from "./Kunnen/KunnenMain";
 import ReviewsMain from "./Reviews/ReviewsMain";
 import Search from "../Verfication/Search";
+import { useSelector } from "react-redux/es/exports";
 const HomePage = () =>{
+    const {isLoggedIn} = useSelector(state => state.auth)
     return(
         <div>
             <HomeHeader />
             <HomeWrapper />
-            <Search/>
+            {isLoggedIn && <Search/>}
             <HomeStarter />
             <HomeManagerCards />
             <KunnenMain />
