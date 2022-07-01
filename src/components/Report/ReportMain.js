@@ -16,6 +16,8 @@ import headImage1 from "../../assets/images/modern-image.png";
 import ReportRecent from './ReportRecent';
 import ReportNeighbour from './ReportNeighbour';
 import Search from "../Verfication/Search";
+import * as fileSaver from "file-saver";
+import * as  XLSX from "xlsx"; 
 const ReportMain = () => {
   let windowLoc = window.location.pathname;
   windowLoc = windowLoc.split("/")[2];
@@ -42,7 +44,6 @@ const ReportMain = () => {
   const [priceInTotal, setPriceInTotal] = useState(0);
   const getClient = async () => {
     const response  = await axios.get("https://34.90.29.163:90/reterive_data/details/?query="+ windowLoc);
-    console.log(response)
     setClient(response.data.details.name);
     setDescription(response.data.details.description);
     setPict(response.data.picture.picture_1);
@@ -83,20 +84,22 @@ const ReportMain = () => {
     doc.text(20, 80, 'Beds:'+ bed) 
     doc.text(20, 100, 'Apartment:'+ apart)
     doc.text(20, 120, 'Price:'+ price)      
-    doc.save('plotcore.pdf')
+    doc.save('plotcore.pdf');
 }
-const generateExcel = ()=>{
-  var docExcel = new jsPDF('p', 'pt');
-  // docExcel.text(20, 20,"Property Name:" + client + ", " + locat );
-  //   docExcel.addFont('helvetica', 'normal')
-  //   docExcel.text(20, 60, 'Year:'+ year)
-  //   docExcel.text(20, 80, 'Beds:'+ bed) 
-  //   docExcel.text(20, 100, 'Apartment:'+ apart)
-  //   docExcel.text(20, 120, 'Price:'+ price)   
-  docExcel.save('plotcore.xlsx');
-}
-// let dataP = price;
-// let datam = meterPrice;
+  const generateExcel = ()=>{
+    let data = [{'Name':client,'Location': locat,'Price':price,'Year':year,'No of Beds':bed,'Apartments':apart, 'Price/m':meterPrice}]
+    try {
+    const fileType = ".xlsx";
+    const ws = XLSX.utils.json_to_sheet(data);
+    const wb = {Sheets:{'data':ws},SheetNames: ['data']};
+    const excelBuffer =XLSX.write(wb,{bookType:"xlsx", type:"array"});
+    const fileData = new Blob([excelBuffer],{type:fileType});
+    fileSaver.saveAs(fileData,"Plotcore"+".xlsx");
+    }
+    catch(err) {
+      console.log(err)
+    }
+  }
   return (
     <div className="reportmain">
       {load ?
@@ -116,9 +119,9 @@ const generateExcel = ()=>{
         pYear = {year +"· "}
         pRoom = {bed +" Kamers· "}
         pArea = {meter +"· "}               
-        pColor = ""
+        pPrice = {"€ "+price}
         pLocation = ""
-        pdataloc = {scrap}
+        pdataloc = {scrap+"· "}
         name1 = "Ziet er nieuw uit"
         value1 = {"€ "+upFive}
         name2 = "Redelijk onderhouden"
@@ -148,8 +151,8 @@ const generateExcel = ()=>{
         setPriceInTotal={setPriceInTotal}/>
         <ReportSpar/>
         <ReportFacts
-        pricest = {priceInTotal}
-        pricetm = {priceInMeter}
+        pricest = {"€ "+priceInTotal+"/m"}
+        pricetm = {"€ "+priceInMeter}
         totalNeigh={totalNeigh}
         />
         <ReportProperty/>

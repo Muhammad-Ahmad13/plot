@@ -4,7 +4,7 @@ export const AuthSlice = createSlice({
   initialState: {
     usersName: "",
     usersEmail:"",
-    isLoggedIn:false
+    isLoggedIn:false,
   },
   reducers: {
    login: (state,action) =>{
@@ -18,9 +18,7 @@ export const AuthSlice = createSlice({
     state.isLoggedIn=false
    }
   }
-
 })
-
 // Action creators are generated for each case reducer function
 export const { login,logout} = AuthSlice.actions
 

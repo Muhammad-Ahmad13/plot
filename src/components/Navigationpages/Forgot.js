@@ -1,13 +1,20 @@
 import React, { useRef, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "./SignUP.css";
 const Forgot = () =>{
     // const firstRef = useRef(null);
-    const [forgetMail, setForgetMail] = useState('');
+    const [email, setEmail] = useState('');
     const handleForgetSubmit = (f) =>{
         f.preventDefault();
-        console.log(forgetMail);
-        setForgetMail('');
+        console.log(email);
+        const femail = {email};
+        axios.post("http://34.90.29.163:90/api/reset-password/", femail).then(respf=>{
+            
+        }).catch(errpf=>{
+            console.log(errpf.status)
+        })
+        // setForgetMail('');
         // firstRef.current.value = ''
         // firstRef.value= setForgetMail(forgetMail);
     }
@@ -25,8 +32,8 @@ const Forgot = () =>{
                           placeholder="Enter your Email"
                           name="getMail"
                           autoComplete="off"
-                          value={forgetMail}
-                          onChange ={(f) => setForgetMail(f.target.value)} 
+                          value={email}
+                          onChange ={(f) => setEmail(f.target.value)} 
                           required
                         />
                     </div>

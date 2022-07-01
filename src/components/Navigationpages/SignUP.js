@@ -52,6 +52,7 @@ const SignUP = (props) =>{
         setEyeShowCon(!eyeShowCon)
     }
     return(
+        <>
         <Formik
           initialValues = {{
             firstName: '',
@@ -179,14 +180,19 @@ const SignUP = (props) =>{
                         <button type="submit"  value="send">Signup</button>
                     </div>
                 </form>
-                <ToastContainer 
+                {/* <ToastContainer 
                         position="top-center"
                         autoClose={3000}
-                    />
+                    /> */}
             </div>
         </div>
         )}
         </Formik>
+         <ToastContainer 
+            position="top-right"
+            autoClose={500}
+        />
+        </>
     );
 }
 export default SignUP;

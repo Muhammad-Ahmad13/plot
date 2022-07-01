@@ -14,7 +14,6 @@ export default function ReportNeighbour(props) {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(7);
   let windowLoc1 = window.location.pathname;
-  console.log(windowLoc1);
   windowLoc1 = windowLoc1.replace("/detail/","");
   windowLoc1 = windowLoc1.split("-");
   windowLoc1 = windowLoc1[3]+"-"+windowLoc1[4]+"-"+windowLoc1[5];
@@ -30,7 +29,6 @@ export default function ReportNeighbour(props) {
       priceDatam = priceDatam + (resp.data[i].asking_per_sq);
       priceTotalm = priceTotalm + (resp.data[i].total_asking_price);
     }
-    console.log(priceDatam)
     props.setPriceInMeter(Math.round(priceTotalm/resp.data.length));
     props.setPriceInTotal(Math.round(priceDatam/resp.data.length));
     setAvail(true);

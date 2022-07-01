@@ -17,9 +17,9 @@ const ReportProg = (props) => {
                   <span>{props.pYear}</span>
                   <span>{props.pRoom}</span>
                   <span>{props.pArea}</span>
-                  <span>{props.pColor}</span>
                   <span>{props.pLocation}</span>
                   <span>{props.pdataloc}</span>
+                  <span>{props.pPrice}</span>
                 </p>
               </div>
               <div className="tablistcontent">
@@ -41,8 +41,8 @@ const ReportProg = (props) => {
                   <ProgressCard
                     progname={props.name1}
                     progvalue={props.value1}
-                    // progStyle1={props.styleP}
-                    // progValue1={props.valP}
+                    // progStyle1={props.widthdata}
+                    // progValue1={props.widthValue}
                   />      
                   </div>
                 </div>
@@ -51,7 +51,9 @@ const ReportProg = (props) => {
                     <ProgressCard
                       progname={props.name2}
                       progvalue={props.value2}
-                      progStyle2={props.style2}
+                      // progStyle2={props.widthdata}
+                      // progValue2={props.widthValue}
+                      // progStyle2={props.style2}
                     />
                   </div>
                 </div>
@@ -60,7 +62,9 @@ const ReportProg = (props) => {
                     <ProgressCard
                       progname={props.name3}
                       progvalue={props.value3}
-                      progStyle3={props.style3}
+                      // progStyle3={props.widthdata}
+                      // progValue3={props.widthValue}
+                      // progStyle3={props.style3}
                     />
                     </div>
                 </div>
@@ -69,7 +73,9 @@ const ReportProg = (props) => {
                     <ProgressCard
                       progname={props.name4}
                       progvalue={props.value4}
-                      progStyle4={props.style4}
+                      // progStyle4={props.widthdata}
+                      // progValue4={props.widthValue}
+                      // progStyle4={props.style4}
                     />
                     </div>
                 </div>
@@ -82,7 +88,7 @@ const ReportProg = (props) => {
                     <ProgressCard
                       progname={props.name5}
                       progvalue={props.value5}
-                      progStyle5={props.style5}
+                      // progStyle5={props.style5}
                     />
                     </div>
                 </div>
@@ -91,7 +97,7 @@ const ReportProg = (props) => {
                     <ProgressCard
                       progname={props.name6}
                       progvalue={props.value6}
-                      progStyle6={props.style6}
+                      // progStyle6={props.style6}
                     /> 
                     </div>
                 </div>
@@ -100,7 +106,7 @@ const ReportProg = (props) => {
                     <ProgressCard
                       progname={props.name7}
                       progvalue={props.value7}
-                      progStyle7={props.style7}
+                      // progStyle7={props.style7}
                     />
                   </div>
                 </div>
@@ -109,7 +115,7 @@ const ReportProg = (props) => {
                       <ProgressCard
                         progname={props.name8}
                         progvalue={props.value8}
-                        progStyle8={props.style8}
+                        // progStyle8={props.style8}
                       />   
                     </div>
                 </div>
