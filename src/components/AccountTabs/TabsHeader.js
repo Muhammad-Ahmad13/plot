@@ -5,7 +5,9 @@ import profimg from "../../assets/images/profileimg1.png";
 import dropIcon from "../../assets/images/proposhat.png";
 import ProfileData from './ProfileData';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 const TabsHeader = () => {
+  const {usersName} = useSelector(state => state.auth);
   return (
     <div className="tabheadermain">
         <div className="tabheaderlogo">
@@ -14,7 +16,7 @@ const TabsHeader = () => {
         <div className="tabprofile">
             <ProfileData
             profimg = {profimg}
-            profhead = "Anna"
+            profhead = {usersName}
             profIcon = {dropIcon}/>
         </div> 
     </div>

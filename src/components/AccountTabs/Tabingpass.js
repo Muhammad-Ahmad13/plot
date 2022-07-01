@@ -1,27 +1,39 @@
 import React,{ useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Formik } from "formik";
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 import passEyet from "../../assets/images/password-eye.png";
 import passhidet from "../../assets/images/passhide.png";
+import axios from 'axios';
 import "./Tabingpass.css";
 const Tabingpass = () => {
+    const {usersEmail} = useSelector(state => state.auth);
+    let email = usersEmail;
     const [passwordShowt , setPasswordShowt] = useState(false);
+    const [oldPasst, setOldpasst] = useState(false);
     const [confirmShowt , setConfirmShowt] = useState(false);
     const [eyeShowPasst, setEyeShowPasst] = useState(true);
     const [eyeShowCont, setEyeShowCont] = useState(true);
+    const [eyeOldPass, setEyeOldPass] = useState(true);
     const togglePasswordt = () =>{
         setPasswordShowt(!passwordShowt);
+    }
+    const toggleOldpass = () =>{
+        setOldpasst(!oldPasst);
     }
     const toggleConfirmt = () =>{
         setConfirmShowt(!confirmShowt);
     }
     const handleEyePass = ()=>{
-        setEyeShowPasst(!eyeShowPasst)
+        setEyeShowPasst(!eyeShowPasst);
     }
     const handleEyeConfirm = ()=>{
-        setEyeShowCont(!eyeShowCont)
+        setEyeShowCont(!eyeShowCont);
+    }
+    const handleEyeOld = () => {
+        setEyeOldPass(!eyeOldPass);
     }
   return (
     <div className="tpassmain">
@@ -42,6 +54,26 @@ const Tabingpass = () => {
                 })
             })}
         onSubmit={(values, {resetForm}) => {
+            const old_password = values.passw;
+            const password = values.password;
+            const updateData = {old_password, password, email};
+            axios.put('https://34.90.29.163:90:/api/change-password/',updateData).then(response=>{
+            switch(response.status){
+                case 202:
+                toast.success("Password updated successfully");
+                break;
+                case 400:
+                toast.error("Invalid Data");
+                break;
+                case 500:
+                toast.info("data already exist");
+                break;
+                default:
+                toast.info("data does not submit");
+            }  
+            }).catch(err=>{
+                console.log(err)
+            })
             resetForm({values: ''})
         }}
         >
@@ -49,17 +81,28 @@ const Tabingpass = () => {
         <div className="">
             <div className="tpass-twidth">
                 <form onSubmit={formik.handleSubmit}>
-                    <div className="tpass-input tpass-width">
+                    <div className="tpass-input tpass-width tpass-abs">
                         <label htmlFor="passw">Your Current Password</label>
                         <input
                             id="passw"
                             name="passw"
-                            type="password"
+                            type= {oldPasst ? "text":"password"}
                             autoComplete="off"
                             placeholder="Current Password"
                             onChange={formik.handleChange}
                             value={formik.values.passw}
                         />
+                        <span onClick={handleEyeOld}>
+                                {eyeOldPass ?
+                                <div className="passeye">
+                                    <img src={passEyet} onClick={toggleOldpass} alt="password_eye"/>
+                                </div> 
+                                : 
+                                <div className="passeye">
+                                    <img src={passhidet} onClick={toggleOldpass} alt="passhide_eye"/>
+                                </div>
+                                }
+                                </span>
                         {formik.errors.passw ? <div className="passerror">{formik.errors.passw}</div> : null}
                     </div>
                    <div className="tpass-flex">
@@ -119,8 +162,8 @@ const Tabingpass = () => {
                     </div>
                 </form>
                 <ToastContainer 
-                        position="top-center"
-                        autoClose={3000}
+                        position="top-right"
+                        autoClose={500}
                     />
             </div>
         </div>

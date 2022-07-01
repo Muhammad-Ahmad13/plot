@@ -12,7 +12,6 @@ const HomeHeader = () =>{
     const logouto= () =>{
         dispatch(logout())
     }
-    console.log(isLoggedIn)
     return(
     <header>
          <nav className="navbar navbar-expand-lg  home-main">

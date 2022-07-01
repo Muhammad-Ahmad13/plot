@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import passEye1 from "../../assets/images/password-eye.png";
 import passhide from "../../assets/images/passhide.png";
-import {login} from "../../store/slice/AuthSlice"
+import {login} from "../../store/slice/AuthSlice";
 import "./SignUP.css";
 const Login = () =>{
     const [loginMail,setLoginMail] = useState("");
@@ -48,7 +48,7 @@ const Login = () =>{
                         headers: {'Authorization':"Bearer " +token}
                     }
                     axios.get("https://34.90.29.163:90/api/user-data/", accessHeader).then(resp=>{
-                    dispatch(login(resp.data))
+                    dispatch(login(resp.data));
                     navigate("/");
                 }).catch(errp=>{
                     console.log(errp.status)
@@ -64,7 +64,6 @@ const Login = () =>{
                 toast.info("Invalid Data");
             }  
         }).catch(err=>{
-            console.log(err.status)
             toast.error("Invalid UserName or Password");
         })
         setPasswordLogin('');
@@ -151,7 +150,7 @@ const Login = () =>{
                 </div>                     
             </div> 
             <ToastContainer 
-                position="top-center"
+                position="top-right"
                 autoClose={500}
             />       
         </>

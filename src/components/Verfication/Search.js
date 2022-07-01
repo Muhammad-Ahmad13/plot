@@ -10,12 +10,6 @@ const Search = () => {
   const [url , setUrl] = useState(" ");
   const [isActive, setIsActive] = useState(false);
   var [upData, setUpData] = useState([]);
-  // let dataInput = "";
-  // const InputEvent = (event) => {
-  //   // dataInput = event.target.value;
-  //   console.log(event.target.value);
-  //   setPosts(event.target.value);
-  // }
     const getAnswer = async () => {
       if (posts !=='')
       {
