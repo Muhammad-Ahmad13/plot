@@ -78,12 +78,14 @@ const ReportMain = () => {
   }, []);
   const generatePdf = ()=>{
     var doc = new jsPDF('p', 'pt');
-    doc.text(20, 20,"Property Name:" + client + ", " + locat )
+    doc.setFontSize(20);
+    doc.text(200, 30,"PLOTCORE")
+    doc.text(20, 60,"Property Name:" + client + ", " + locat )
     doc.addFont('helvetica', 'normal')
-    doc.text(20, 60, 'Year:'+ year)
-    doc.text(20, 80, 'Beds:'+ bed) 
-    doc.text(20, 100, 'Apartment:'+ apart)
-    doc.text(20, 120, 'Price:'+ price)      
+    doc.text(20, 90, 'Year:'+ year)
+    doc.text(20, 120, 'Beds:'+ bed) 
+    doc.text(20, 150, 'Apartment:'+ apart)
+    doc.text(20, 180, 'Price:'+ price)      
     doc.save('plotcore.pdf');
 }
   const generateExcel = ()=>{
@@ -94,7 +96,7 @@ const ReportMain = () => {
     const wb = {Sheets:{'data':ws},SheetNames: ['data']};
     const excelBuffer =XLSX.write(wb,{bookType:"xlsx", type:"array"});
     const fileData = new Blob([excelBuffer],{type:fileType});
-    fileSaver.saveAs(fileData,"Plotcore"+".xlsx");
+    fileSaver.saveAs(fileData,"plotcore"+".xlsx");
     }
     catch(err) {
       console.log(err)

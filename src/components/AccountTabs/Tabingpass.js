@@ -57,7 +57,8 @@ const Tabingpass = () => {
             const old_password = values.passw;
             const password = values.password;
             const updateData = {old_password, password, email};
-            axios.put('https://34.90.29.163:90:/api/change-password/',updateData).then(response=>{
+            console.log(updateData);
+            axios.put('https://34.90.29.163:90/api/change-password/',updateData).then(response=>{
             switch(response.status){
                 case 202:
                 toast.success("Password updated successfully");

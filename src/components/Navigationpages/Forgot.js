@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./SignUP.css";
@@ -7,10 +8,23 @@ const Forgot = () =>{
     const [email, setEmail] = useState('');
     const handleForgetSubmit = (f) =>{
         f.preventDefault();
-        console.log(email);
         const femail = {email};
-        axios.post("http://34.90.29.163:90/api/reset-password/", femail).then(respf=>{
-            
+        axios.post("https://34.90.29.163:90/api/reset-password/", femail).then(respf=>{ 
+            console.log(respf)
+            let res = respf.status;
+            switch(res){
+                case 202:
+                toast.success("Kindly check your email");
+                break;
+                case 400:
+                toast.error("Invalid email");
+                break;
+                case 500:
+                toast.info("data already exist");
+                break;
+                default:
+                toast.info("data does not submit");
+            }   
         }).catch(errpf=>{
             console.log(errpf.status)
         })
@@ -48,6 +62,10 @@ const Forgot = () =>{
                 </div> */}
              {/* </div> */}
         {/* // </div> */}
+        <ToastContainer 
+            position="top-right"
+            autoClose={500}
+        />
     </>
     );
 }
