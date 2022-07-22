@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
 import axios from "axios";
 import logolocator from "../../assets/images/service3.png";
 import "./Search.css";
@@ -10,10 +11,14 @@ const Search = () => {
   const [url , setUrl] = useState(" ");
   const [isActive, setIsActive] = useState(false);
   var [upData, setUpData] = useState([]);
+  const {tokenSet} = useSelector(state => state.tok);
     const getAnswer = async () => {
+      let accessSearch = {
+        headers: {'Authorization':"Bearer " +tokenSet}
+    }
       if (posts !=='')
       {
-        const response  = await axios.get("https://34.90.29.163:90/reterive_data/?query="+ posts);
+        const response  = await axios.get("https://34.90.29.163:90/reterive_data/?query="+ posts, accessSearch);
         setUpData(response.data);
         setSData(response.data);
     }

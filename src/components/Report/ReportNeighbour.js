@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState} from "react";
+import { useSelector } from "react-redux";
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -13,6 +14,7 @@ import markermap from "../../assets/images/markermap.png";
 export default function ReportNeighbour(props) {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(7);
+  const {tokenSet} = useSelector(state => state.tok);
   let windowLoc1 = window.location.pathname;
   windowLoc1 = windowLoc1.replace("/detail/","");
   windowLoc1 = windowLoc1.split("-");
@@ -20,7 +22,10 @@ export default function ReportNeighbour(props) {
   const [neighbourName, setNeighbourName]= useState([]);
   const [avail, setAvail] = useState(false);
   const getNeighbour = async () => {
-    const resp  = await axios.get("https://34.90.29.163:90/reterive_data/neighbours/?query="+ windowLoc1);
+    let accessHeaderNeigh = {
+      headers: {'Authorization':"Bearer " +tokenSet}
+    }
+    const resp  = await axios.get("https://34.90.29.163:90/reterive_data/neighbours/?query="+ windowLoc1,accessHeaderNeigh);
     setNeighbourName(resp.data);
     props.setTotalNeigh(resp.data.length); 
     let priceDatam = 0;

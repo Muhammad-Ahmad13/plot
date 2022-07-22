@@ -15,7 +15,7 @@ export const AuthSlice = createSlice({
    logout :(state)=>{
     state.usersName= ""
     state.usersEmail= "" 
-    state.isLoggedIn=false
+    state.isLoggedIn=false 
    }
   }
 })

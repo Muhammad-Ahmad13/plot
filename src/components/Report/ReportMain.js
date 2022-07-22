@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import axios from "axios";
 import jsPDF from "jspdf";
 import HomeFooter from '../HomePage/HomeFooter/HomeFooter';
@@ -42,8 +43,13 @@ const ReportMain = () => {
   const [totalNeigh, setTotalNeigh] = useState(0);
   const [priceInMeter, setPriceInMeter] = useState(0);
   const [priceInTotal, setPriceInTotal] = useState(0);
+  const {tokenSet} = useSelector(state => state.tok);
   const getClient = async () => {
-    const response  = await axios.get("https://34.90.29.163:90/reterive_data/details/?query="+ windowLoc);
+    let accessHeaderDetail = {
+      headers: {'Authorization':"Bearer " +tokenSet}
+    }
+    const response  = await axios.get("https://34.90.29.163:90/reterive_data/details/?query="+ windowLoc,accessHeaderDetail);
+    console.log(response.status)
     setClient(response.data.details.name);
     setDescription(response.data.details.description);
     setPict(response.data.picture.picture_1);
