@@ -17,6 +17,7 @@ const Tabingpass = () => {
     const [eyeShowPasst, setEyeShowPasst] = useState(true);
     const [eyeShowCont, setEyeShowCont] = useState(true);
     const [eyeOldPass, setEyeOldPass] = useState(true);
+    const {tokenSet} = useSelector(state => state.tok);
     const togglePasswordt = () =>{
         setPasswordShowt(!passwordShowt);
     }
@@ -57,8 +58,10 @@ const Tabingpass = () => {
             const old_password = values.passw;
             const password = values.password;
             const updateData = {old_password, password, email};
-            console.log(updateData);
-            axios.put('https://34.90.29.163:90/api/change-password/',updateData).then(response=>{
+            let accessChange = {
+                headers: {'Authorization':"Bearer " +tokenSet}
+            }
+            axios.put('https://34.90.29.163:90/api/change-password/',updateData,accessChange).then(response=>{
             switch(response.status){
                 case 202:
                 toast.success("Password updated successfully");

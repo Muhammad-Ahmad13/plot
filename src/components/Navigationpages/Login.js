@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import passEye1 from "../../assets/images/password-eye.png";
 import passhide from "../../assets/images/passhide.png";
 import {login} from "../../store/slice/AuthSlice";
+import {tokenData} from "../../store/slice/TokenSlice";
 import "./SignUP.css";
 const Login = () =>{
     const [loginMail,setLoginMail] = useState("");
@@ -21,9 +22,11 @@ const Login = () =>{
     const [userEmail, setUserEmail] = useState("");
     // const {usersName,usersEmail,isLoggedIn} = useSelector(state => state.auth);
     const {isLoggedIn} = useSelector(state => state.auth);
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     //const abc = useSelector(state => state.auth)
     // const [token, setToken] = useState("");
+    const {tokenSet} = useSelector(state => state.tok);
+    const dispatchTok = useDispatch();
     const toggleLogPass = () =>{
         setPassLogShow(!passLogShow);
     }
@@ -36,18 +39,20 @@ const Login = () =>{
         const password = passwordLogin;
         const logData = {email, password}
         axios.post("https://34.90.29.163:90/api/token/", logData).then(res=>{
-            let token = res.data.access;
             logRes = res.status;
+            dispatchTok(tokenData(res.data));
             switch(res.status){
-                case 200:
+                case 200:   
+                // dispatchTok(tokenData(res.data));
+                // console.log(tokenSet);
                 setLogData(true);
                 toast.success("Login successfully...");
                 // navigate("/");
                 // const getToken = async () => {
-                    let accessHeader = {
-                        headers: {'Authorization':"Bearer " +token}
-                    }
-                    axios.get("https://34.90.29.163:90/api/user-data/", accessHeader).then(resp=>{
+                    let accessHeader1 = {
+                        headers: {'Authorization':"Bearer " + res.data.access}
+                    };
+                    axios.get("https://34.90.29.163:90/api/user-data/", accessHeader1).then(resp=>{
                     dispatch(login(resp.data));
                     navigate("/");
                 }).catch(errp=>{
@@ -65,6 +70,7 @@ const Login = () =>{
             }  
         }).catch(err=>{
             toast.error("Invalid UserName or Password");
+            console.log(err)
         })
         setPasswordLogin('');
     }

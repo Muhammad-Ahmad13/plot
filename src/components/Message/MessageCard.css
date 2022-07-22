@@ -1,0 +1,14 @@
+.mess-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    width: 20%;
+    margin: 20px auto;
+}
+.mess-main p{
+    color: #1E87F0;
+    font-size: 18px;
+}

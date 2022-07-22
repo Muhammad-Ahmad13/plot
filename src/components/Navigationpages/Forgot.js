@@ -10,8 +10,8 @@ const Forgot = () =>{
         f.preventDefault();
         const femail = {email};
         axios.post("https://34.90.29.163:90/api/reset-password/", femail).then(respf=>{ 
-            console.log(respf)
             let res = respf.status;
+            console.log(respf)
             switch(res){
                 case 202:
                 toast.success("Kindly check your email");
